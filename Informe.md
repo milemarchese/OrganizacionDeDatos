@@ -39,8 +39,8 @@ Una vez finalizado el filtrado con GeoPy se observa que no se encontraron 374 lo
 
 Una vez filtrado el dataset obtenemos:
 
-![Gráfico]("img/grafico_10_loc_real.png")
-![Gráfico]("img/grafico_10_loc_fake.png")
+![Gráfico](img/grafico_10_loc_real.png)
+![Gráfico](img/grafico_10_loc_fake.png)
 
 __Conclusiones:__ TODO
 
