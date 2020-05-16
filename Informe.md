@@ -15,7 +15,7 @@ No todos los tweets tienen asociado una locación o palabra clave. Respecto a la
 
 ### Cantidad de tweets reales vs. falsos
 
-La distribución reales contra falsos es de un %58 de falsos contra un %42 de reales. 
+La distribución reales contra falsos es de un 58% de falsos contra un 42% de reales. 
 
 ### Top ciudades con mayor cantidad de tweets reales/falsos
 
@@ -27,7 +27,7 @@ Una vez que se descartaron las locaciones nulas, como primera observación se ve
 
 3. Una vez agrupado por location se puede ver que no se eliminó por compleo el problema de lugares 'sinónimos', en el gráfico vemos que está: 'new york', 'nyc' y 'new york, ny'. 
 
-![Gráfico](grafico_locaciones_repetidas.png)
+![Gráfico](img/grafico_locaciones_repetidas.png)
 
 Agrupando las locaciones de 3946 pasan a 2271.
 
@@ -39,8 +39,8 @@ Una vez finalizado el filtrado con GeoPy se observa que no se encontraron 374 lo
 
 Una vez filtrado el dataset obtenemos:
 
-![Gráfico](grafico_10_loc_real.png)
-![Gráfico](grafico_10_loc_fake.png)
+![Gráfico]("img/grafico_10_loc_real.png")
+![Gráfico]("img/grafico_10_loc_fake.png")
 
 __Conclusiones:__ TODO
 
@@ -48,7 +48,7 @@ __Conclusiones:__ TODO
 
 Con el dataset obtenido en el filtrado de locaciones se genera la columna 'country'. En la primera iteración se encuentra que hay paises 'sinónimos', por ejemplo, 'United States' Y 'United States of America', por otro lado es necesario eliminar los espacios que también generan redundancias, como 'Nigeria' y 'Nigeria '. Se filtra de nuevo sobre esta lista de paises con un servicio de geocoding y se eliminan las repeticiones.
 
-Primera iteración:
+* Primera iteración:
 
 | country					| total	| real | fake |
 | ------------------------- |:-----:| ----:|-----:|
@@ -68,9 +68,28 @@ Primera iteración:
 | France					| 25	| 12   | 13   |
 | Ireland					| 25    | 9	   | 16   |
 
+* Segunda iteración:
 
+![Gráfico](img/grafico_top_paises.png)
 
+__Conclusiones:__ TODO
 
+### Personas más mencionadas
 
+Se busca encontrar las cuentas de twitter más mencionadas y su relación entre tweets sobre desastres reales y falsos. Se ejecuta una regex sobre los tweets que contienen el caracter '@', esta se encarga de filtrar todas las cuentas mencionadas ignorando espacios ya que el arroba también se utiliza como una abreviación de 'at' en inglés. 
+
+![Gráfico](img/mas_mencionados.png)
+![Gráfico](img/mas_mencionados_rf.png)
+
+__Conclusiones:__ TODO
+
+### Relación real-fake si location y/o keyword es nulo
+
+* Los tweets con keyword nula, son solo 56 de un set de mas de 7600. No representa una muestra significativa para sacar una conclusión.
+* Respecto a los tweets de locacion nula los reales y los falsos continuan manteniendo la proporción de 58%-42%. Se decide aplicar un filtro más agrupándolos por largo del tweet.
+
+![Gráfico](img/grafico_no_location_rf.png)
+
+__Conclusión:__ TODO mantiene misma que finger.
 
 
