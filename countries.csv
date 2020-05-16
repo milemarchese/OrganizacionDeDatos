@@ -1,0 +1,134 @@
+country,total,real,fake,geodata,filtered_country
+Africa,6,6,0,Africa,Africa
+Antarctica,1,1,0,Antarctica,Antarctica
+Argentina,16,9,7,Argentina,Argentina
+Armenia,1,0,1,Հայաստան,Հայաստան
+Asia,3,2,1,Asia,Asia
+Australia,106,57,49,Australia,Australia
+Azərbaycan,2,1,1,Azərbaycan,Azərbaycan
+Bangladesh,3,2,1,বাংলাদেশ,বাংলাদেশ
+Barbados,4,1,3,Barbados,Barbados
+België - Belgique - Belgien,2,1,1,België / Belgique / Belgien,België / Belgique / Belgien
+België / Belgique / Belgien,2,1,1,België / Belgique / Belgien,België / Belgique / Belgien
+Botswana,1,0,1,Botswana,Botswana
+Brasil,21,3,18,Brasil,Brasil
+Cambodia,2,1,1,ព្រះរាជាណាចក្រ​កម្ពុជា,ព្រះរាជាណាចក្រ​កម្ពុជា
+Cameroun,1,1,0,Cameroun,Cameroun
+Canada,239,114,125,Canada,Canada
+Chile,5,2,3,Chile,Chile
+China 中国,9,5,4,中国,中国
+Colombia,5,1,4,Colombia,Colombia
+Costa Rica,3,0,3,Costa Rica,Costa Rica
+Cuba,2,2,0,Cuba,Cuba
+Danmark,10,4,6,Danmark,Danmark
+Deutschland,15,7,8,Deutschland,Deutschland
+Ecuador,2,0,2,Ecuador,Ecuador
+Eesti,1,0,1,Eesti,Eesti
+Egypt / مصر,1,1,0,مصر,مصر
+España,16,6,10,España,España
+Ethiopia,10,3,7,ኢትዮጵያ,ኢትዮጵያ
+Europa,2,2,0,Europa,Europa
+France,25,12,13,France,France
+Ghana,5,2,3,Ghana,Ghana
+Guatemala,1,1,0,Guatemala,Guatemala
+Guernsey,1,0,1,Guernsey,Guernsey
+Haiti,3,3,0,Ayiti,Ayiti
+Honduras,2,0,2,Honduras,Honduras
+India,84,54,30,भारत - India,भारत - India
+Indonesia,29,16,13,Indonesia,Indonesia
+Inexpressible Island,3,3,0,Inexpressible Island,Inexpressible Island
+Iraq,1,1,0,العراق,العراق
+Ireland,25,9,16,Ireland,Ireland
+Italia,34,10,24,Italia,Italia
+Jamaika,7,4,3,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika","Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika"
+Jersey,4,1,3,"Jersey, Saint Lawrence, Jersey","Jersey, Saint Lawrence, Jersey"
+Jordan / الأُرْدُن,2,2,0,الأردن,الأردن
+Kazakhstan,2,0,2,Казахстан,Казахстан
+Kenya,39,15,24,Kenya,Kenya
+Libya / ليبيا,1,0,1,ليبيا,ليبيا
+Lietuva,1,0,1,Lietuva,Lietuva
+Magyarország,2,0,2,Magyarország,Magyarország
+Malawi,2,1,1,Malawi,Malawi
+Malaysia,8,4,4,Malaysia,Malaysia
+Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,1,0,1,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب
+Mauritius,1,1,0,Mauritius,Mauritius
+Moldova,1,0,1,Moldova,Moldova
+México,6,2,4,"Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México","Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México"
+Nederland,20,12,8,Nederland,Nederland
+New Zealand,24,10,14,New Zealand / Aotearoa,New Zealand / Aotearoa
+New Zealand / Aotearoa,2,2,0,New Zealand / Aotearoa,New Zealand / Aotearoa
+Nigeria,61,43,18,Nigeria,Nigeria
+Norge,8,4,4,"Norge, Namsos, Trøndelag, Norge","Norge, Namsos, Trøndelag, Norge"
+North America,1,1,0,North America,North America
+Palestinian Territory,1,1,0,,
+Panama,1,0,1,Panamá,Panamá
+Panamá,3,0,3,Panamá,Panamá
+Peru,7,4,3,Perú,Perú
+Perú,1,0,1,Perú,Perú
+Philippines,39,15,24,Philippines,Philippines
+Polska,8,4,4,Polska,Polska
+Portugal,8,1,7,Portugal,Portugal
+República Dominicana,32,21,11,República Dominicana,República Dominicana
+România,23,7,16,România,România
+République Démocratique du Congo,2,1,1,République démocratique du Congo,République démocratique du Congo
+Saint Lucia,1,1,0,Saint Lucia,Saint Lucia
+Saudi Arabia / السعودية,3,2,1,السعودية,السعودية
+Schweiz/Suisse/Svizzera/Svizra,2,0,2,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra
+Seychelles,1,0,1,Sesel,Sesel
+Shqipëria,2,0,2,Shqipëria,Shqipëria
+Sierra Leone,2,1,1,Sierra Leone,Sierra Leone
+Singapore,8,2,6,Singapore,Singapore
+Slovenija,1,1,0,Slovenija,Slovenija
+Somalia / الصومال,2,2,0,Soomaaliya الصومال,Soomaaliya الصومال
+Soomaaliya الصومال,2,1,1,Soomaaliya الصومال,Soomaaliya الصومال
+South Africa,31,10,21,South Africa,South Africa
+South Sudan,1,0,1,South Sudan,South Sudan
+Suomi,5,3,2,Suomi,Suomi
+Sverige,10,5,5,Sverige,Sverige
+Switzerland,6,3,3,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra
+Sénégal,1,1,0,Sénégal,Sénégal
+Tanzania,1,1,0,Tanzania,Tanzania
+Tchad / تشاد,1,1,0,Tchad تشاد,Tchad تشاد
+Togo,1,0,1,Togo,Togo
+Trinidad and Tobago,2,1,1,Trinidad and Tobago,Trinidad and Tobago
+Türkiye,2,1,1,Türkiye,Türkiye
+Türkmenistan,1,0,1,Türkmenistan,Türkmenistan
+Uganda,2,1,1,Uganda,Uganda
+United Arab Emirates,7,5,2,الإمارات العربية المتحدة,الإمارات العربية المتحدة
+United Kingdom,384,143,241,United Kingdom,United Kingdom
+United States,168,103,65,United States,United States
+United States of America,1705,700,1005,United States,United States
+Venezuela,7,4,3,Venezuela,Venezuela
+Việt Nam,5,3,2,Việt Nam,Việt Nam
+Zimbabwe,1,1,0,Zimbabwe,Zimbabwe
+Österreich,1,0,1,Österreich,Österreich
+Česká republika,6,3,3,Česko,Česko
+Ελλάδα,3,2,1,Ελλάς,Ελλάς
+Κύπρος - Kıbrıs,2,1,1,Κύπρος - Kıbrıs,Κύπρος - Kıbrıs
+Беларусь,1,0,1,Беларусь,Беларусь
+Бългaрия,1,0,1,Бългaрия,Бългaрия
+Монгол улс,2,1,1,Монгол улс,Монгол улс
+Россия,6,1,5,Россия,Россия
+Србија (Serbia),1,0,1,Србија,Србија
+Україна,4,4,0,Україна,Україна
+ישראל,7,4,3,ישראל,ישראל
+افغانستان,1,1,0,افغانستان,افغانستان
+السعودية,1,1,0,السعودية,السعودية
+السودان ‎al-Sūdān,1,0,1,السودان,السودان
+العراق,1,1,0,العراق,العراق
+الكويت,1,1,0,الكويت,الكويت
+ایران,1,0,1,ایران,ایران
+تونس,2,0,2,تونس,تونس
+سلطنة عُمان Oman,1,1,0,عمان,عمان
+لبنان  Lebanon,1,1,0,لبنان,لبنان
+مصر,1,1,0,مصر,مصر
+پاکستان,23,17,6,پاکستان,پاکستان
+ދިވެހިރާއްޖެ,2,1,1,ދިވެހިރާއްޖެ,ދިވެހިރާއްޖެ
+भारत - India,24,19,5,भारत - India,भारत - India
+ශ්‍රී ලංකාව இலங்கை,1,1,0,ශ්‍රී ලංකාව இலங்கை,ශ්‍රී ලංකාව இலங்கை
+ประเทศไทย,6,4,2,ประเทศไทย,ประเทศไทย
+ປະເທດລາວ,6,4,2,ປະເທດລາວ,ປະເທດລາວ
+中国,7,1,6,中国,中国
+日本,5,3,2,日本,日本
+日本 (Japan),11,4,7,日本,日本
+대한민국,3,1,2,대한민국,대한민국
