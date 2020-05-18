@@ -1,134 +1,134 @@
-country,total,real,fake,geodata,filtered_country
-Africa,6,6,0,Africa,Africa
-Antarctica,1,1,0,Antarctica,Antarctica
-Argentina,16,9,7,Argentina,Argentina
-Armenia,1,0,1,Հայաստան,Հայաստան
-Asia,3,2,1,Asia,Asia
-Australia,106,57,49,Australia,Australia
-Azərbaycan,2,1,1,Azərbaycan,Azərbaycan
-Bangladesh,3,2,1,বাংলাদেশ,বাংলাদেশ
-Barbados,4,1,3,Barbados,Barbados
-België - Belgique - Belgien,2,1,1,België / Belgique / Belgien,België / Belgique / Belgien
-België / Belgique / Belgien,2,1,1,België / Belgique / Belgien,België / Belgique / Belgien
-Botswana,1,0,1,Botswana,Botswana
-Brasil,21,3,18,Brasil,Brasil
-Cambodia,2,1,1,ព្រះរាជាណាចក្រ​កម្ពុជា,ព្រះរាជាណាចក្រ​កម្ពុជា
-Cameroun,1,1,0,Cameroun,Cameroun
-Canada,239,114,125,Canada,Canada
-Chile,5,2,3,Chile,Chile
-China 中国,9,5,4,中国,中国
-Colombia,5,1,4,Colombia,Colombia
-Costa Rica,3,0,3,Costa Rica,Costa Rica
-Cuba,2,2,0,Cuba,Cuba
-Danmark,10,4,6,Danmark,Danmark
-Deutschland,15,7,8,Deutschland,Deutschland
-Ecuador,2,0,2,Ecuador,Ecuador
-Eesti,1,0,1,Eesti,Eesti
-Egypt / مصر,1,1,0,مصر,مصر
-España,16,6,10,España,España
-Ethiopia,10,3,7,ኢትዮጵያ,ኢትዮጵያ
-Europa,2,2,0,Europa,Europa
-France,25,12,13,France,France
-Ghana,5,2,3,Ghana,Ghana
-Guatemala,1,1,0,Guatemala,Guatemala
-Guernsey,1,0,1,Guernsey,Guernsey
-Haiti,3,3,0,Ayiti,Ayiti
-Honduras,2,0,2,Honduras,Honduras
-India,84,54,30,भारत - India,भारत - India
-Indonesia,29,16,13,Indonesia,Indonesia
-Inexpressible Island,3,3,0,Inexpressible Island,Inexpressible Island
-Iraq,1,1,0,العراق,العراق
-Ireland,25,9,16,Ireland,Ireland
-Italia,34,10,24,Italia,Italia
-Jamaika,7,4,3,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika","Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika"
-Jersey,4,1,3,"Jersey, Saint Lawrence, Jersey","Jersey, Saint Lawrence, Jersey"
-Jordan / الأُرْدُن,2,2,0,الأردن,الأردن
-Kazakhstan,2,0,2,Казахстан,Казахстан
-Kenya,39,15,24,Kenya,Kenya
-Libya / ليبيا,1,0,1,ليبيا,ليبيا
-Lietuva,1,0,1,Lietuva,Lietuva
-Magyarország,2,0,2,Magyarország,Magyarország
-Malawi,2,1,1,Malawi,Malawi
-Malaysia,8,4,4,Malaysia,Malaysia
-Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,1,0,1,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب
-Mauritius,1,1,0,Mauritius,Mauritius
-Moldova,1,0,1,Moldova,Moldova
-México,6,2,4,"Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México","Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México"
-Nederland,20,12,8,Nederland,Nederland
-New Zealand,24,10,14,New Zealand / Aotearoa,New Zealand / Aotearoa
-New Zealand / Aotearoa,2,2,0,New Zealand / Aotearoa,New Zealand / Aotearoa
-Nigeria,61,43,18,Nigeria,Nigeria
-Norge,8,4,4,"Norge, Namsos, Trøndelag, Norge","Norge, Namsos, Trøndelag, Norge"
-North America,1,1,0,North America,North America
-Palestinian Territory,1,1,0,,
-Panama,1,0,1,Panamá,Panamá
-Panamá,3,0,3,Panamá,Panamá
-Peru,7,4,3,Perú,Perú
-Perú,1,0,1,Perú,Perú
-Philippines,39,15,24,Philippines,Philippines
-Polska,8,4,4,Polska,Polska
-Portugal,8,1,7,Portugal,Portugal
-República Dominicana,32,21,11,República Dominicana,República Dominicana
-România,23,7,16,România,România
-République Démocratique du Congo,2,1,1,République démocratique du Congo,République démocratique du Congo
-Saint Lucia,1,1,0,Saint Lucia,Saint Lucia
-Saudi Arabia / السعودية,3,2,1,السعودية,السعودية
-Schweiz/Suisse/Svizzera/Svizra,2,0,2,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra
-Seychelles,1,0,1,Sesel,Sesel
-Shqipëria,2,0,2,Shqipëria,Shqipëria
-Sierra Leone,2,1,1,Sierra Leone,Sierra Leone
-Singapore,8,2,6,Singapore,Singapore
-Slovenija,1,1,0,Slovenija,Slovenija
-Somalia / الصومال,2,2,0,Soomaaliya الصومال,Soomaaliya الصومال
-Soomaaliya الصومال,2,1,1,Soomaaliya الصومال,Soomaaliya الصومال
-South Africa,31,10,21,South Africa,South Africa
-South Sudan,1,0,1,South Sudan,South Sudan
-Suomi,5,3,2,Suomi,Suomi
-Sverige,10,5,5,Sverige,Sverige
-Switzerland,6,3,3,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra
-Sénégal,1,1,0,Sénégal,Sénégal
-Tanzania,1,1,0,Tanzania,Tanzania
-Tchad / تشاد,1,1,0,Tchad تشاد,Tchad تشاد
-Togo,1,0,1,Togo,Togo
-Trinidad and Tobago,2,1,1,Trinidad and Tobago,Trinidad and Tobago
-Türkiye,2,1,1,Türkiye,Türkiye
-Türkmenistan,1,0,1,Türkmenistan,Türkmenistan
-Uganda,2,1,1,Uganda,Uganda
-United Arab Emirates,7,5,2,الإمارات العربية المتحدة,الإمارات العربية المتحدة
-United Kingdom,384,143,241,United Kingdom,United Kingdom
-United States,168,103,65,United States,United States
-United States of America,1705,700,1005,United States,United States
-Venezuela,7,4,3,Venezuela,Venezuela
-Việt Nam,5,3,2,Việt Nam,Việt Nam
-Zimbabwe,1,1,0,Zimbabwe,Zimbabwe
-Österreich,1,0,1,Österreich,Österreich
-Česká republika,6,3,3,Česko,Česko
-Ελλάδα,3,2,1,Ελλάς,Ελλάς
-Κύπρος - Kıbrıs,2,1,1,Κύπρος - Kıbrıs,Κύπρος - Kıbrıs
-Беларусь,1,0,1,Беларусь,Беларусь
-Бългaрия,1,0,1,Бългaрия,Бългaрия
-Монгол улс,2,1,1,Монгол улс,Монгол улс
-Россия,6,1,5,Россия,Россия
-Србија (Serbia),1,0,1,Србија,Србија
-Україна,4,4,0,Україна,Україна
-ישראל,7,4,3,ישראל,ישראל
-افغانستان,1,1,0,افغانستان,افغانستان
-السعودية,1,1,0,السعودية,السعودية
-السودان ‎al-Sūdān,1,0,1,السودان,السودان
-العراق,1,1,0,العراق,العراق
-الكويت,1,1,0,الكويت,الكويت
-ایران,1,0,1,ایران,ایران
-تونس,2,0,2,تونس,تونس
-سلطنة عُمان Oman,1,1,0,عمان,عمان
-لبنان  Lebanon,1,1,0,لبنان,لبنان
-مصر,1,1,0,مصر,مصر
-پاکستان,23,17,6,پاکستان,پاکستان
-ދިވެހިރާއްޖެ,2,1,1,ދިވެހިރާއްޖެ,ދިވެހިރާއްޖެ
-भारत - India,24,19,5,भारत - India,भारत - India
-ශ්‍රී ලංකාව இலங்கை,1,1,0,ශ්‍රී ලංකාව இலங்கை,ශ්‍රී ලංකාව இலங்கை
-ประเทศไทย,6,4,2,ประเทศไทย,ประเทศไทย
-ປະເທດລາວ,6,4,2,ປະເທດລາວ,ປະເທດລາວ
-中国,7,1,6,中国,中国
-日本,5,3,2,日本,日本
-日本 (Japan),11,4,7,日本,日本
-대한민국,3,1,2,대한민국,대한민국
+country,geodata,filtered_country,point
+Africa,Africa,Africa,"(11.5024338, 17.7578122, 0.0)"
+Antarctica,Antarctica,Antarctica,"(-79.4063075, 0.3149312, 0.0)"
+Argentina,Argentina,Argentina,"(-34.9964963, -64.9672817, 0.0)"
+Armenia,Հայաստան,Հայաստան,"(40.7696272, 44.6736646, 0.0)"
+Asia,Asia,Asia,"(51.2086975, 89.2343748, 0.0)"
+Australia,Australia,Australia,"(-24.7761086, 134.755, 0.0)"
+Azərbaycan,Azərbaycan,Azərbaycan,"(40.3936294, 47.7872508, 0.0)"
+Bangladesh,বাংলাদেশ,বাংলাদেশ,"(24.4768783, 90.2932426, 0.0)"
+Barbados,Barbados,Barbados,"(13.1500331, -59.5250305, 0.0)"
+België - Belgique - Belgien,België / Belgique / Belgien,België / Belgique / Belgien,"(50.6402809, 4.6667145, 0.0)"
+België / Belgique / Belgien,België / Belgique / Belgien,België / Belgique / Belgien,"(50.6402809, 4.6667145, 0.0)"
+Botswana,Botswana,Botswana,"(-23.1681782, 24.5928742, 0.0)"
+Brasil,Brasil,Brasil,"(-10.3333333, -53.2, 0.0)"
+Cambodia,ព្រះរាជាណាចក្រ​កម្ពុជា,ព្រះរាជាណាចក្រ​កម្ពុជា,"(13.5066394, 104.869423, 0.0)"
+Cameroun,Cameroun,Cameroun,"(4.6125522, 13.1535811, 0.0)"
+Canada,Canada,Canada,"(61.0666922, -107.9917071, 0.0)"
+Chile,Chile,Chile,"(-31.7613365, -71.3187697, 0.0)"
+China 中国,中国,中国,"(35.000074, 104.999927, 0.0)"
+Colombia,Colombia,Colombia,"(2.8894434, -73.783892, 0.0)"
+Costa Rica,Costa Rica,Costa Rica,"(10.2735633, -84.0739102, 0.0)"
+Cuba,Cuba,Cuba,"(23.0131338, -80.8328748, 0.0)"
+Danmark,Danmark,Danmark,"(55.670249, 10.3333283, 0.0)"
+Deutschland,Deutschland,Deutschland,"(51.0834196, 10.4234469, 0.0)"
+Ecuador,Ecuador,Ecuador,"(-1.3397668, -79.3666965, 0.0)"
+Eesti,Eesti,Eesti,"(58.7523778, 25.3319078, 0.0)"
+Egypt / مصر,مصر,مصر,"(26.2540493, 29.2675469, 0.0)"
+España,España,España,"(39.3262345, -4.8380649, 0.0)"
+Ethiopia,ኢትዮጵያ,ኢትዮጵያ,"(10.2116702, 38.6521203, 0.0)"
+Europa,Europa,Europa,"(51.0, 10.0, 0.0)"
+France,France,France,"(46.603354, 1.8883335, 0.0)"
+Ghana,Ghana,Ghana,"(8.0300284, -1.0800271, 0.0)"
+Guatemala,Guatemala,Guatemala,"(15.6356088, -89.8988087, 0.0)"
+Guernsey,Guernsey,Guernsey,"(49.579520200000005, -2.5290434448309886, 0.0)"
+Haiti,Ayiti,Ayiti,"(19.1399952, -72.3570972, 0.0)"
+Honduras,Honduras,Honduras,"(15.2572432, -86.0755145, 0.0)"
+India,भारत - India,भारत - India,"(22.3511148, 78.6677428, 0.0)"
+Indonesia,Indonesia,Indonesia,"(-2.4833826, 117.8902853, 0.0)"
+Inexpressible Island,Inexpressible Island,Inexpressible Island,"(-74.8973732, 163.67607102861984, 0.0)"
+Iraq,العراق,العراق,"(33.0955793, 44.1749775, 0.0)"
+Ireland,Ireland,Ireland,"(52.865196, -7.9794599, 0.0)"
+Italia,Italia,Italia,"(42.6384261, 12.674297, 0.0)"
+Jamaika,"Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika","Jamaica, Spanish Town, Saint Catherine, Middlesex County, Jamaika","(18.1152958, -77.1598454610168, 0.0)"
+Jersey,"Jersey, Saint Lawrence, Jersey","Jersey, Saint Lawrence, Jersey","(49.21230655, -2.1255999596428845, 0.0)"
+Jordan / الأُرْدُن,الأردن,الأردن,"(31.1667049, 36.941628, 0.0)"
+Kazakhstan,Казахстан,Казахстан,"(47.2286086, 65.2093197, 0.0)"
+Kenya,Kenya,Kenya,"(1.4419683, 38.4313975, 0.0)"
+Libya / ليبيا,ليبيا,ليبيا,"(26.8234472, 18.1236723, 0.0)"
+Lietuva,Lietuva,Lietuva,"(55.3500003, 23.7499997, 0.0)"
+Magyarország,Magyarország,Magyarország,"(47.1817585, 19.5060937, 0.0)"
+Malawi,Malawi,Malawi,"(-13.2687204, 33.9301963, 0.0)"
+Malaysia,Malaysia,Malaysia,"(4.5693754, 102.2656823, 0.0)"
+Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,Maroc / ⵍⵎⵖⵔⵉⴱ / المغرب,"(31.1728205, -7.3362482, 0.0)"
+Mauritius,Mauritius,Mauritius,"(-20.2759451, 57.5703566, 0.0)"
+Moldova,Moldova,Moldova,"(47.2879608, 28.5670941, 0.0)"
+México,"Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México","Ciudad de México, Cuauhtémoc, Ciudad de México, 06060, México","(19.4326296, -99.1331785, 0.0)"
+Nederland,Nederland,Nederland,"(52.5001698, 5.7480821, 0.0)"
+New Zealand,New Zealand / Aotearoa,New Zealand / Aotearoa,"(-41.5000831, 172.8344077, 0.0)"
+New Zealand / Aotearoa,New Zealand / Aotearoa,New Zealand / Aotearoa,"(-41.5000831, 172.8344077, 0.0)"
+Nigeria,Nigeria,Nigeria,"(9.6000359, 7.9999721, 0.0)"
+Norge,"Norge, Namsos, Trøndelag, Norge","Norge, Namsos, Trøndelag, Norge","(64.5731537, 11.52803643954819, 0.0)"
+North America,North America,North America,"(51.0000002, -109.0000002, 0.0)"
+Palestinian Territory,,,
+Panama,Panamá,Panamá,"(8.559559, -81.1308434, 0.0)"
+Panamá,Panamá,Panamá,"(8.559559, -81.1308434, 0.0)"
+Peru,Perú,Perú,"(-6.8699697, -75.0458515, 0.0)"
+Perú,Perú,Perú,"(-6.8699697, -75.0458515, 0.0)"
+Philippines,Philippines,Philippines,"(12.7503486, 122.7312101, 0.0)"
+Polska,Polska,Polska,"(52.215933, 19.134422, 0.0)"
+Portugal,Portugal,Portugal,"(40.0332629, -7.8896263, 0.0)"
+República Dominicana,República Dominicana,República Dominicana,"(19.0974031, -70.3028026, 0.0)"
+România,România,România,"(45.9852129, 24.6859225, 0.0)"
+République Démocratique du Congo,République démocratique du Congo,République démocratique du Congo,"(-2.9814344, 23.8222636, 0.0)"
+Saint Lucia,Saint Lucia,Saint Lucia,"(13.8250489, -60.975036, 0.0)"
+Saudi Arabia / السعودية,السعودية,السعودية,"(25.6242618, 42.3528328, 0.0)"
+Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra,"(46.7985624, 8.2319736, 0.0)"
+Seychelles,Sesel,Sesel,"(-4.6574977, 55.4540146, 0.0)"
+Shqipëria,Shqipëria,Shqipëria,"(41.000028, 19.9999619, 0.0)"
+Sierra Leone,Sierra Leone,Sierra Leone,"(8.6400349, -11.8400269, 0.0)"
+Singapore,Singapore,Singapore,"(1.357107, 103.8194992, 0.0)"
+Slovenija,Slovenija,Slovenija,"(45.8133113, 14.4808369, 0.0)"
+Somalia / الصومال,Soomaaliya الصومال,Soomaaliya الصومال,"(8.3676771, 49.083416, 0.0)"
+Soomaaliya الصومال,Soomaaliya الصومال,Soomaaliya الصومال,"(8.3676771, 49.083416, 0.0)"
+South Africa,South Africa,South Africa,"(-28.8166236, 24.991639, 0.0)"
+South Sudan,South Sudan,South Sudan,"(7.8699431, 29.6667897, 0.0)"
+Suomi,Suomi,Suomi,"(63.2467777, 25.9209164, 0.0)"
+Sverige,Sverige,Sverige,"(59.6749712, 14.5208584, 0.0)"
+Switzerland,Schweiz/Suisse/Svizzera/Svizra,Schweiz/Suisse/Svizzera/Svizra,"(46.7985624, 8.2319736, 0.0)"
+Sénégal,Sénégal,Sénégal,"(14.4750607, -14.4529612, 0.0)"
+Tanzania,Tanzania,Tanzania,"(-6.5247123, 35.7878438, 0.0)"
+Tchad / تشاد,Tchad تشاد,Tchad تشاد,"(15.6134137, 19.0156172, 0.0)"
+Togo,Togo,Togo,"(8.7800265, 1.0199765, 0.0)"
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,"(10.8677845, -60.9821067, 0.0)"
+Türkiye,Türkiye,Türkiye,"(38.9597594, 34.9249653, 0.0)"
+Türkmenistan,Türkmenistan,Türkmenistan,"(39.3763807, 59.3924609, 0.0)"
+Uganda,Uganda,Uganda,"(1.5333554, 32.2166578, 0.0)"
+United Arab Emirates,الإمارات العربية المتحدة,الإمارات العربية المتحدة,"(24.0002488, 53.9994829, 0.0)"
+United Kingdom,United Kingdom,United Kingdom,"(54.7023545, -3.2765753, 0.0)"
+United States,United States,United States,"(39.7837304, -100.4458825, 0.0)"
+United States of America,United States,United States,"(39.7837304, -100.4458825, 0.0)"
+Venezuela,Venezuela,Venezuela,"(8.0018709, -66.1109318, 0.0)"
+Việt Nam,Việt Nam,Việt Nam,"(13.2904027, 108.4265113, 0.0)"
+Zimbabwe,Zimbabwe,Zimbabwe,"(-18.4554963, 29.7468414, 0.0)"
+Österreich,Österreich,Österreich,"(47.2000338, 13.199959, 0.0)"
+Česká republika,Česko,Česko,"(49.8167003, 15.4749544, 0.0)"
+Ελλάδα,Ελλάς,Ελλάς,"(38.9953683, 21.9877132, 0.0)"
+Κύπρος - Kıbrıs,Κύπρος - Kıbrıs,Κύπρος - Kıbrıs,"(34.9823018, 33.1451285, 0.0)"
+Беларусь,Беларусь,Беларусь,"(53.4250605, 27.6971358, 0.0)"
+Бългaрия,Бългaрия,Бългaрия,"(42.6073975, 25.4856617, 0.0)"
+Монгол улс,Монгол улс,Монгол улс,"(46.8250388, 103.8499736, 0.0)"
+Россия,Россия,Россия,"(64.6863136, 97.7453061, 0.0)"
+Србија (Serbia),Србија,Србија,"(44.1534121, 20.55144, 0.0)"
+Україна,Україна,Україна,"(49.4871968, 31.2718321, 0.0)"
+ישראל,ישראל,ישראל,"(31.5313113, 34.8667654, 0.0)"
+افغانستان,افغانستان,افغانستان,"(33.7680065, 66.2385139, 0.0)"
+السعودية,السعودية,السعودية,"(25.6242618, 42.3528328, 0.0)"
+السودان ‎al-Sūdān,السودان,السودان,"(14.5844444, 29.4917691, 0.0)"
+العراق,العراق,العراق,"(33.0955793, 44.1749775, 0.0)"
+الكويت,الكويت,الكويت,"(29.2733964, 47.4979476, 0.0)"
+ایران,ایران,ایران,"(32.6475314, 54.5643516, 0.0)"
+تونس,تونس,تونس,"(33.8439408, 9.400138, 0.0)"
+سلطنة عُمان Oman,عمان,عمان,"(21.0000287, 57.0036901, 0.0)"
+لبنان  Lebanon,لبنان,لبنان,"(33.8750629, 35.843409, 0.0)"
+مصر,مصر,مصر,"(26.2540493, 29.2675469, 0.0)"
+پاکستان,پاکستان,پاکستان,"(30.3308401, 71.247499, 0.0)"
+ދިވެހިރާއްޖެ,ދިވެހިރާއްޖެ,ދިވެހިރާއްޖެ,"(4.7064352, 73.3287853, 0.0)"
+भारत - India,भारत - India,भारत - India,"(22.3511148, 78.6677428, 0.0)"
+ශ්‍රී ලංකාව இலங்கை,ශ්‍රී ලංකාව இலங்கை,ශ්‍රී ලංකාව இலங்கை,"(7.5554942, 80.7137847, 0.0)"
+ประเทศไทย,ประเทศไทย,ประเทศไทย,"(14.8971921, 100.83273, 0.0)"
+ປະເທດລາວ,ປະເທດລາວ,ປະເທດລາວ,"(20.0171109, 103.378253, 0.0)"
+中国,中国,中国,"(35.000074, 104.999927, 0.0)"
+日本,日本,日本,"(36.5748441, 139.2394179, 0.0)"
+日本 (Japan),日本,日本,"(36.5748441, 139.2394179, 0.0)"
+대한민국,대한민국,대한민국,"(36.638392, 127.6961188, 0.0)"
