@@ -2,22 +2,57 @@
 ### Análisis Exploratorio
 ------
 
-### Introducción: El dataset
+## Introducción
 
-El dataset está compuesto por 7613 filas, contiene 5 columnas:
-* id
-* keyword
-* location
+### El dataset
+
+Se obtuvo el dataset de: https://www.kaggle.com/c/nlp-getting-started y es el archivo `train.csv`.
+
+Está compuesto por 7613 filas, contiene 5 columnas:
+* id: Identificador único del tweet.
+* keyword: Palabra clave sobre el texto del tweet. Puede tener o no.
+* location: Ubicación de donde el tweet fue mandado. Puede tener o no.
 * text : Contenido de un tweet sobre un desastre.
 * target: Veracidad del tweet, 1 = real, 0 = falso.
 
-No todos los tweets tienen asociado una locación o palabra clave. Respecto a la columna de texto se detecta que hay tweets repetidos con distintos grados de verdad, es decir, el mismo texto es calificado como real y falso. Se decidió eliminar la totalidad de los duplicados ya que no representan una muestra significativa y no hay otro criterio más que el aleatorio para conservar uno de cada grupo de repetidos.
+### Primer acercamiento
+
+Respecto a la columna de texto se detecta que hay tweets repetidos con distintos grados de verdad, es decir, el mismo texto es calificado como real y falso. Se decidió eliminar la totalidad de los duplicados ya que no representan una muestra significativa y no hay otro criterio más que el aleatorio para conservar al menos uno de cada grupo de repetidos.
 
 ### Cantidad de tweets reales vs. falsos
 
 La distribución reales contra falsos es de un 58% de falsos contra un 42% de reales. 
 
-### Top ciudades con mayor cantidad de tweets reales/falsos
+![Gráfico](img/grafico_distribucion_set.png)
+
+## Desastres
+
+## Texto
+
+## Texto: Links
+
+## Texto: Menciones
+
+### Personas más mencionadas
+
+Se busca encontrar las cuentas de twitter más mencionadas y su relación entre tweets sobre desastres reales y falsos. Se ejecuta una regex sobre los tweets que contienen el caracter '@', esta se encarga de filtrar todas las cuentas mencionadas ignorando espacios ya que el arroba también se utiliza como una abreviación de 'at' en inglés. 
+
+![Gráfico](img/mas_mencionados.png)
+![Gráfico](img/mas_mencionados_rf.png)
+
+Personas mencionadas en tweets que solo tienen calificación falsa:
+
+![Perfil Ariana Grande](img/perfil_ariana.png)
+![Perfil Justin Bieber](img/perfil_justin.png)
+![Perfil Michael Parr](img/perfil_mikeparr.png)
+
+__Conclusiones:__ Si bien no hay una cantidad de menciones suficientes para sacar una conclusión que muestre correlación entre menciones y veracidad del tweet se puede observar una tendencia de tweets con calificación falsa dirigidos a personas relacionadas con el mundo del espectáculo, en este caso Ariana Grande y Justin Bieber son artistas pop juveniles y Michael Parr es un actor. 
+
+## Texto: Hashtags
+
+## Ubicaciones
+
+### Top ciudades con mayor cantidad de tweets reales y falsos
 
 Una vez que se descartaron las locaciones nulas, como primera observación se ve que hay muchas locaciones incoherentes o falsas. Para descartar la mayor cantidad de datos falsos se filtró de la siguiente forma:
 
@@ -27,7 +62,7 @@ Una vez que se descartaron las locaciones nulas, como primera observación se ve
 
 3. Una vez agrupado por 'location' se puede ver que no se eliminó por completo el problema de lugares redundantes, en el gráfico vemos que está: 'new york', 'nyc' y 'new york, ny'. 
 
-![Gráfico](img/grafico_locaciones_repetidas.png)
+![Gráfico](img/top_20_ubicaciones_rep.png)
 
 4. Utilización de la librería [GeoPy]: Esta librería recibe la columna 'location' del dataframe y el resultado se almacena en la columna 'geodata'. Geopy dada la locación devuelve (principalmete) address y point. Adress es la dirección completa del lugar, por ejemplo, 'City of Melbourne, Victoria, Australia', y point contiene las coordenadas. GeoPy da la opción de utilizar cualquier servicio de geocoding, en este caso se utilizó [Nominatim]. Nominatim es un servicio gratuito y open-source, permite un máximo de un request por segundo y eso hace que sea poco performante en tiempo. Es por eso que se persiste el archivo locations.csv, y solo es necesario correr GeoPy si no se encuentra el csv.
 Una vez finalizado el filtrado con GeoPy se observa que no se encontraron 374 locaciones, el 94% de ellas con una sola aparición. Podría volver a pasarse el servicio de geocoding pero se decidió descartarlas.
@@ -48,7 +83,7 @@ __Conclusiones:__ A priori los resultados son pequeños en proporción al tamañ
 
 [estadísticas] = https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/
 
-### Locaciones no encontradas
+### Ubicaciones no encontradas
 
 __Hipótesis:__ Si bien el sistema de geocoding funcionó exitosamente en una gran parte del set habrá ubicaciones reales que no se encontraron.
 
@@ -70,8 +105,9 @@ Las siguientes son las ubicaciones no encontradas por GeoPy mas frecuentes:
 * mad as hell
 * reddit
 
+__Conclusión:__ Se observan ubicaciones reales que el sistema no encontró, también se observan ubicaciones falsas peculiares.
 
-### Top paises participantes:
+### Paises en el set:
 
 __Hipótesis:__ Por lo antes mencionado Estados Unidos es el país que mas cantidad de tweets tienen en su ubicación.
 
@@ -112,20 +148,7 @@ Según grado de veracidad del tweet:
 
 __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con mayor cantidad de tweets del set.
 
-### Personas más mencionadas
 
-Se busca encontrar las cuentas de twitter más mencionadas y su relación entre tweets sobre desastres reales y falsos. Se ejecuta una regex sobre los tweets que contienen el caracter '@', esta se encarga de filtrar todas las cuentas mencionadas ignorando espacios ya que el arroba también se utiliza como una abreviación de 'at' en inglés. 
-
-![Gráfico](img/mas_mencionados.png)
-![Gráfico](img/mas_mencionados_rf.png)
-
-Personas mencionadas en tweets que solo tienen calificación falsa:
-
-![Perfil Ariana Grande](img/perfil_ariana.png)
-![Perfil Justin Bieber](img/perfil_justin.png)
-![Perfil Michael Parr](img/perfil_mikeparr.png)
-
-__Conclusiones:__ Si bien no hay una cantidad de menciones suficientes para sacar una conclusión que muestre correlación entre menciones y veracidad del tweet se puede observar una tendencia de tweets con calificación falsa dirigidos a personas relacionadas con el mundo del espectáculo, en este caso Ariana Grande y Justin Bieber son artistas pop juveniles y Michael Parr es un actor. 
 
 ### Relación real-fake si location y/o keyword es nulo
 
