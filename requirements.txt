@@ -12,3 +12,6 @@ nltk==3.5
 tqdm==4.46.0
 googletrans==2.4.0
 squarify==0.4.3
+plotly-geo==1.0.0
+pyshp==2.1.0
+descartes=1.1.0
