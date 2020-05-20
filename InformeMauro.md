@@ -166,3 +166,177 @@ La presencia de whitehouse como tendencia en Washington DC nos lleva a concluir 
 
 
 
+
+### Texto: Metaanálisis - Métricas de longitud del tweet y derivados.
+
+Para el inicio del análisis del texto de los tweets en relación a su longitud se comenzó por tomar un subset del dataframe original y se le agregó una columna de longitud en caracteres para cada tweet individual.
+En base a esto se realizaron análisis básicos sobre la **longitud del tweet**.
+
+![Gráfico](img/cantidad_en_funcion_long_hist.png)
+
+Según lo observado se puede apreciar que los tweets falsos se distribuyen más equitativamente en casi todas sus longitudes (en caracteres) mientras que los reales se agrupan mayoritariamente en longitudes mayores y ambos tienen una cantidad mucho mayor en el rango de 120 a 140 caracteres que es el más comun entre ambos.
+
+Por otro lado, se analizó por separado el largo de cada tweet en promedio en relación al si eran reales o no y se dio el siguiente resultado.
+
+![Gráfico](img/largo_segun_target_box.png)
+
+**Conclusión**: Como se puede observar, es notable que los tweets que aportan información sobre desastres frecuentan ser más largos que los que no brindan dicha información ya que se los observa más comprimidos en una longitud mayor que los que no son reales.
+
+Esto se puede deber a que los tweets que brindan información sobre desastres suelen tener más contenido ya que dan detalles sobre lo ocurrido.
+En base a esto se puede afirmar que los tweets de longitud mayor tienden a ser más veraces que los que no, aunque no es una tendencia excesivamente marcada.
+
+A continuación se analizó el largo promedio de cada palabra individual utilizada en los tweets.
+
+**Hipótesis**: Se espera que el resultado de este análisis individual arroje como resultado que al informar sobre desastres se utilice un vocabulario más amplio que permita expresar los detalles del suceso con exactitud y detalle, con lo cual se espera que el largo promedio de las palabras utilizadas sea mayor en tweets reales que en falsos.
+
+![Gráfico](img/largo_prom_palabras.png)
+
+**Conclusión**: Como fue previsto, el largo promedio dio como resultado un número mayor en tweets reales, sin mostrar una tendencia demasiado marcada. Con lo cual podemos afirmar que el rango de lenguaje utilizado en tweets reales es más amplio y que los tweets falsos suelen utilizar mayor cantidad de contracciones.
+
+
+
+Subsiguientemente se añadieron más columnas útiles para el análisis entre las cuales se analizan a continuación la longitud en palabras del tweet.
+
+![Gráfico](img/longitud_en_palabras_segun_target.png)
+
+**Conclusión**: Como se puede observar, y en coincidencia con el primer gráfico de este tópico de análisis, los tweets falsos muestran una tendencia más marcada a tener longitudes tanto cortas como largas, mientras que los tweets reales se agrupan mayormente en el rango de 10 a 20 palabras, pero suelen tener más palabras que los falsos, lo cual se corresponde con la intención de informar detalladamente sobre desastres que ocurrieron en ese momento.
+
+Además, se analizó la longitud en palabras únicas del tweet, es decir, sin repetir.
+
+![Gráfico](img/longitud_en_palabras_unicas_segun_target.png)
+
+Se observa entonces un comportamiento muy similar y acorde al anterior con ciertos cambios en la cantidad más frecuente de tweets reales que no aporta resultados significativos al análisis.
+
+Luego, se añadieron más columnas útiles para el análisis tales como: _está por arriba del largo promedio; largo promedio de las palabras del tweet; contiene link._
+
+Una vez hecho esto se realizó un mapa de calor (_heatmap_) que muestra la correlación entre cada columna a través del método de [Pearson], que devuelve un valor entre -1 y +1, donde 1 es correlación total positiva, 0 no hay correlación y -1 es correlación total negativa.
+
+
+![Gráfico](img/heatmap_corr_entre_cols.png)
+
+[Pearson]: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+
+**Conclusiones del heatmap pendientes**
+
+
+### Texto: Sentimiento del tweet.
+
+Para realizar el siguiente análisis, se utilizó una de las bibliotecas ofrecidas por
+[NLKT], la cual brinda información acerca de qué porcentaje de sentimiento neutro, sentimiento positivo, sentimiento negativo y su respectivo compuesto de los tipos transmite el texto estudiado.
+
+**Hipótesis inicial**: En el contexto de informar sobre desastres se espera que además de usuarios individuales, agencias de noticias sean las comunicadoras de estos sucesos, con lo cual la redacción del contenido del tweet debe apuntar a que sea objetivo y lo más neutro posible.
+
+**Hipótesis refinada**: Considerando que se utiliza una herramienta que procesa y asigna valores a palabras y frases de manera aislada, se espera que dado que la temática de los tweets es sobre desastres, el análisis debería arrojar resultados neutros tendiendo a negativos. Esto es porque el uso de ciertas palabras específicas relacionadas a desastres no implican sentimiento positivo. Además, al informar sobre desastres las palabras que describen este tipo de sucesos apuntan en general a cosas más negativas.
+
+Para éste análisis se separó en tweets reales y falsos sobre los cuales se calculó el sentimiento para cada tweet individual de manera que se obtuvieron los siguientes resultados.
+
+![Gráfico](img/sentimiento.png)
+
+
+**Conclusión**: Como se previó en las hipótesis, el sentimiento de un tweet falso está distribuído más equitativamente del lado negativo y positivo, mientras que el sentimiento de un tweet real se inclina más sobre el lado negativo que el positivo. Además, ambos presentan una gran cantidad de tweets con sentimiento neutro (igual a 0).
+Esto confirma la hipótesis de que los tweets reales tienen una connotación negativa mayor dado que se estima que se nombres desastres y eventos que impactan negativamente en la sociedad.
+
+Como complemento al análisis gráfico se calcularon los valores medios de los tweets reales y falsos para dar una idea más analítica del análisis.
+
+* Media del sentimiento en tweets reales: -0.26414053968253864.
+* Media del sentimiento en tweets falsos: -0.0601307656395891.
+* Media del sentimiento en tweets en general: -0.14657558514931382.
+
+Adicionalmente, se realizó una visualización sobre los valores individuales de los sentimientos que brindó NLKT, de los cuales se obtuvo lo siguiente.
+
+![Gráfico](img/cant_tw_mas_menos_seguro.png)
+
+Esta última visualización permite observar de manera más analítica que los tweets reales tienen mucho menor contenido positivo que los falsos que se distribuyen de manera más equitativa.
+
+[NLKT]: https://www.nltk.org/api/nltk.sentiment.html
+
+
+### Texto: Uso de puntuación
+
+Para el siguiente análisis se utilizaron los contenidos de puntuación provistos por la librería [string] tales como punto, coma, signo de admiración, etc. con el objetivo de analizar el uso de puntuación en el contenido de los tweets.
+
+**Hipótesis**: El contenido de un tweet que desea transmitir una noticia sobre algún desastre debería estar bien redactado, esto implica que se utilizan oportunamente caracteres de puntuación para expresar con claridad la noticia. En base a esto, se puede inferir que un tweet puede contener una cantidad más alta de puntuaciones si se trata de un caso real, que de un caso falso, ya que éste último no tiene dicha intención y tiene más libertad de redactar el contenido sin seguir ciertas normas como lo hacen los tweets de cadenas de noticias o que aportan información precisa.
+
+Inicialmente se quiso realizar un análisis sobre la relación entre si el tweet contenía algún caracter de puntuación y su target, pero los resultados analíticos preliminares mostraron que no ameritaba un análisis significativo ya que casi todos los tweets poseían algún tipo de puntuación. Esto es:
+* Falsos: 93,66% contiene puntuación;
+* Reales: 98% contiene puntuación.
+
+Si, en cambio, ameritaba realizar un análisis sobre la _cantidad_ de puntuación utilizada según target.
+
+Previo a realizar la visualización se realizó una exploración de los datos y se filtraron 4 casos de tweets que, por la cantidad, no aportaban valores significativos al análisis ya que poseían una cantidad de puntuaciones mayor a 50 (particularmente 50, 50, 52 y 61), y generaban una visualización que perdía el foco en el objetivo del análisis.
+
+
+
+Luego de esto se procedió a realizar la siguiente visualización.
+
+![Gráfico](img/caracteres_de_puntuacion.png)
+
+**Conclusión**: Aquí entonces se puede observar que la hipótesis se cumple ya que hay una mayor cantidad de tweets falsos con poca cantidad de caracteres de puntuación y que va decreciendo sostenidamente. Por otro lado, hay una cantidad considerablemente menor de tweets reales que poseen poca puntuación y hay una mayor cantidad de tweets con más puntuación (que promedia entre 5 y 10 caracteres), lo que confirma la hipótesis que al transmitir noticias sobre desastres se formulan con un uso más adecuado del lenguaje.
+
+Adicionalmente se calcularon analíticamente los promedios para complementar estos resultados:
+* Promedio de caracteres de puntuación en tweets reales: 7.567937
+* Promedio de caracteres de puntuación en tweets falsos: 6.263785
+
+Esto reafirma lo dicho arriba ya que se ve que el uso de puntuación es un poco mayor en tweets reales.
+
+[string]: https://docs.python.org/2/library/string.html
+
+
+### Texto: Links
+
+En esta sección del análisis se pretendió ver la relación entre la utilización de links en tweets y la veracidad de ellos.
+Para lograr esto se añadió una columna que especifica si el tweet posee un link, de manera que se pueda analizar la cantidad de tweets que poseen links y ver qué tipo de relación conlleva con la veracidad.
+
+**Hipótesis**: Se espera que si un tweet posee un link, éste lleve al usuario a una página relacionada al desastre sobre el que el tweet habla, particularmente para los reales. En cuanto a los falsos la utilización de un link puede ser para diversos propósitos pero en general las agencias de noticias hacen uso de links con mucha mayor frecuencia. Es por esto que se espera que la cantidad de tweets que posean link sea mayor si son reales, y por el contrario, si son falsos la cantidad sea menor.
+
+![Gráfico](img/cant_tw_por_existencia_links.png)
+
+**Conclusión**: Por lo visto en el gráfico, la hipótesis es confirmada y queda muy claro que los tweets falsos tienen una mayor cantidad de tweets que no poseen links. Mientras que los reales con links superan ampliamente a los reales sin ellos, aunque haya una menor cantidad de tweets reales sobre los que analizar. En particular, la cantidad de tweets falsos es de 4284 y la cantidad de tweets reales es 3150.
+
+
+Adicionalmente, se quiso explorar particularmente los tweets que poseían links. Para lo cual se exploró una métrica más básica: la longitud del tweet.
+
+**Hipótesis**: Según lo visto arriba, se asume que los tweets que no poseen links deberían ser más cortos en general, dado que por más que los links estén con _url shorteners_, inevitablemente se añaden caracteres al tweet.
+
+![Gráfico](img/largo_tw_segun_posee_link.png)
+
+**Conclusión**: Por lo visto en el gráfico la hipótesis es correcta y efectivamente los tweets que no poseen link son considerablemente más cortos que los que si. Además, los tweets que poseen link se los ve mucho más comprimidos en una longitud mayor, lo cual puede relacionarse con que se quiera comunicar un desastre real, proveyendo detalles sobre el suceso e incluyendo un link a la noticia.
+
+Finalmente, en cuanto a links se quiso explorar el comportamiento de tweets con links más seguros y menos seguros. Esto es, links que utilizan [http] (menos seguro) o [https] (más seguro). 
+
+El _link wrapping_ provisto por twitter (dominio t.co) asocia links más seguros a https, y menos seguros a http. Según el sitio [twitter developer]:
+_When a HTTPS-based URL is passed while link wrapping is enabled, a HTTPS-based t.co link will be produced. HTTPS-based t.co links are one character longer than standard t.co links to account for the protocol change._
+Esto es por el protocolo más seguro HTTPS.
+
+Para esto, se filtraron los tweets que contenían links y se los dividió según protocolo.
+Es importante notar que la cantidad de tweets con [https] es mucho menor a la cantidad de tweets con [http]. Esto puede deberse a la fecha de generación de estos tweets (desconocida) o a pura coincidencia del dataset.
+
+* Cantidad de tweets con link más seguro: 403
+* Cantidad de tweets con link menos seguro: 3556
+
+
+**Hipótesis**: Se espera que la utilización de links **seguros** sea más frecuente en tweets reales ya que las agencias de noticias suelen manejarse con tecnologías más actualizadas en cuanto a seguridad. Sin embargo, hay muy pocos tweets con links más seguros en el dataset, lo cual puede que impida ver una tendencia marcada. Por otro lado, se espera que la utilización de links **no seguros** sea más frecuente en tweets falsos ya que pueden ser provistos por páginas sin verificar y no aportan información veraz sobre desastres. En este caso, hay muchos tweets con links menos seguros en el dataset.
+
+![Gráfico](img/cant_tw_mas_menos_seguro.png)
+
+**Conclusión**: Por lo visto en el gráfico, nada de los predicho fue cumplido ya que hay una _menor_ cantidad de tweets con links más seguros reales que falsos, mientras que los tweets con links menos seguros son más frecuentes en los tweets reales. Sin embargo, esto último se correlaciona con lo visto previamente, que existe una mayor cantidad de tweets reales con links. La utilización de links menos seguros puede darse por, nuevamente, la fecha de generación de estos tweets (desconocida) o ser pura coincidencia del dataset.
+
+[http]: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+[https]: https://en.wikipedia.org/wiki/HTTPS
+[twitter developer]: https://developer.twitter.com/en/docs/basics/tco
+
+
+### Ubicaciones: Relación condados costeros de Estados Unidos y el ratio de desastres reales.
+
+#### Introduccion
+
+
+
+#### Inserte mapa (hacerlo más grande? ask mile pq by_address no andaba)
+
+![Gráfico](img/distrib_real_tweets_usa.png)
+
+En base a lo visto arriba en el mapa, se analiza qué tipo de desastres ocurrieron en dichas ubicaciones.
+
+Hipotesis: Como se vio en las coastal counties uno imaginaria que las keywords de dichos tweets estarian relacionados a desastres comunes en proporcion normal y naturales en proporcion mayor, entre los cuales podria estar inundaciones, huracanes, tornados, tormentas tropicales (florida), entre otros desastres naturales que suelen ocurrir en zonas costeras.
+
