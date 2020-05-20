@@ -31,7 +31,7 @@ La distribución reales contra falsos es de un 58% de falsos contra un 42% de re
 ## Texto
 
 ### Palabras más usadas en los tweets
-Para este análisis se decidió separar a los verdaderos y los falsos, y analizar si existia alguna diferencia entre las palabras que más aparecen.
+Para este análisis se decidió separar a los verdaderos y los falsos, y analizar si existía alguna diferencia entre las palabras que más aparecen.
 
 ![Gráfico](img/top_palabras_falsos.png)
 
@@ -47,7 +47,7 @@ En base a esto se realizaron análisis básicos sobre la **longitud del tweet**.
 
 ![Gráfico](img/cantidad_en_funcion_long_hist.png)
 
-Según lo observado se puede apreciar que los tweets falsos se distribuyen más equitativamente en casi todas sus longitudes (en caracteres) mientras que los reales se agrupan mayoritariamente en longitudes mayores y ambos tienen una cantidad mucho mayor en el rango de 120 a 140 caracteres que es el más comun entre ambos.
+Según lo observado se puede apreciar que los tweets falsos se distribuyen más equitativamente en casi todas sus longitudes (en caracteres) mientras que los reales se agrupan mayoritariamente en longitudes mayores y ambos tienen una cantidad mucho mayor en el rango de 120 a 140 caracteres que es el más común entre ambos.
 
 Por otro lado, se analizó por separado el largo de cada tweet en promedio en relación al si eran reales o no y se dio el siguiente resultado.
 
@@ -140,7 +140,7 @@ __Conclusión:__ Podemos observar claramente en el gráfico una tendencia a que 
 
 Para el siguiente análisis se utilizaron los contenidos de puntuación provistos por la librería [string] tales como punto, coma, signo de admiración, etc., con el objetivo de analizar el uso de puntuación en el contenido de los tweets.
 
-**Hipótesis**: El contenido de un tweet que desea transmitir una noticia sobre algún desastre debería estar bien redactado, esto implica que se utilizan oportunamente caracteres de puntuación para expresar con claridad la noticia. En base a esto, se puede inferir que un tweet puede contener una cantidad más alta de puntuaciones si se trata de un caso real, que de un caso falso, ya que éste último no tiene dicha intención y tiene más libertad de redactar el contenido sin seguir ciertas normás como lo hacen los tweets de cadenas de noticias o que aportan información precisa.
+**Hipótesis**: El contenido de un tweet que desea transmitir una noticia sobre algún desastre debería estar bien redactado, esto implica que se utilizan oportunamente caracteres de puntuación para expresar con claridad la noticia. En base a esto, se puede inferir que un tweet puede contener una cantidad más alta de puntuaciones si se trata de un caso real, que de un caso falso, ya que éste último no tiene dicha intención y tiene más libertad de redactar el contenido sin seguir ciertas normas como lo hacen los tweets de cadenas de noticias o que aportan información precisa.
 
 Inicialmente se quiso realizar un análisis sobre la relación entre si el tweet contenía algún caracter de puntuación y su target, pero los resultados analíticos preliminares mostraron que no ameritaba un análisis significativo ya que casi todos los tweets poseían algún tipo de puntuación. Esto es:
 * Falsos: 93,66% contiene puntuación;
@@ -253,7 +253,7 @@ Para una mayor distincion, se grafican, separados por veracidad, los hashtags m�
 
 ![Gráfico](img/top_hashtags_falsos.png)
 
-Para estos ultimos graficos se utilizó la herramienta [wordcloud] e [imageio].
+Para estos últimos gráficos se utilizó la herramienta [wordcloud] e [imageio].
 
 [wordcloud]: https://pypi.org/project/wordcloud/
 [imageio]: https://pypi.org/project/imageio/
@@ -267,7 +267,7 @@ Para el siguiente análisis se filtró y aisló, del texto de los tweets, los ha
 
 Haciendo una observación al gráfico y  una busqueda paralela de datos se encontró una clara relación entre los hashtags más utilizados y el lugar de donde provienen. 
 Es el caso de ukfloods, tendencia en el Reino Unido, haciendo referencia a [inundaciones] producidas en noviembre de 2019 que causaron daños de al menos 150 millones de libras.
-El hashtag yazidis, trending topic en Rocky Mountains, hace pensar que la ubicación fue mal interpretada, ya que puede tratarse de un exilio másivo sufrida por esa comunidad en el año 2014, a partir de una [ataque militar estadounidense], hacia una zona montañosa en Iraq.
+El hashtag yazidis, trending topic en Rocky Mountains, hace pensar que la ubicación fue mal interpretada, ya que puede tratarse de un exilio masivo sufrida por esa comunidad en el año 2014, a partir de una [ataque militar estadounidense], hacia una zona montañosa en Iraq.
 WXKY, radio localizada en el estado de Kentucky.
 La presencia de whitehouse como tendencia en Washington DC nos lleva a concluir que los hashtags que más apariciones presentan tienen una relación directa con su ubicación.
 
@@ -282,7 +282,7 @@ La presencia de whitehouse como tendencia en Washington DC nos lleva a concluir 
 
 Una vez que se descartaron las ubicaciones nulas, como primera observación se ve que hay muchas incoherentes o falsas. Para descartar la mayor cantidad de datos falsos se filtró de la siguiente forma:
 
-1. Se ejecuta una regex que captura solamente aquellas ubicaciones que tienen los caracteres de la 'a' a la 'z', comás y espacios. Se decide ignorar ubicaciones que no existen compuestas por símbolos, por ejemplo, "Instagram: trillrebel_".
+1. Se ejecuta una regex que captura solamente aquellas ubicaciones que tienen los caracteres de la 'a' a la 'z', comas y espacios. Se decide ignorar ubicaciones que no existen compuestas por símbolos, por ejemplo, "Instagram: trillrebel_".
 
 2. Todo el texto a lower case, una vez que todo está en minúscula desaparece la diferencia entre, por ejemplo, "USA" y "usa".
 
@@ -413,7 +413,7 @@ Para esto se realizó un gráfico que permite observar las 20 keywords más menc
 
 **Conclusión**: Por lo visto en el gráfico, la hipótesis no fue confirmada en su totalidad, pero si muestra una tendencia a nombrar estos tipos de desastres comunes a zonas costeras. El caso más notorio es el de inundaciones (provistas por _flood_ y _flooding_) que es el más mencionado.
 Es importante mencionar que como sucedió con las ubicaciones de los tweets en general, existen redundancias (como la mencionada previamente) que puede sesgar el análisis, y que no es viable analizar caso por caso ya que por ejemplo se mencionan _buildings on fire_ y _burning buildings_ que a menos que se los analice individualmente no es posible agruparlos.
-Sin embargo, no se demuestra una variedad de estos tipos de desastres comunes a zonas costeras según la hipótesis, ya que aún formando parte del top, keywords como _typhoon, evacuated y catastrophic_ no son mayormente mencionadas y el caso particular de las últimás dos no necesariamente pueden referirse a desastres naturales de los mencionados previamente.
+Sin embargo, no se demuestra una variedad de estos tipos de desastres comunes a zonas costeras según la hipótesis, ya que aún formando parte del top, keywords como _typhoon, evacuated y catastrophic_ no son mayormente mencionadas y el caso particular de las últimas dos no necesariamente pueden referirse a desastres naturales de los mencionados previamente.
 
 Aún así, se puede ver que hay keywords que _pueden_ estar relacionadas a este tipo de desastres, con lo cual se puede ver que existe cierta relación entre la ubicación del tweet y el tipo de desastre sobre el que habla.  
 
