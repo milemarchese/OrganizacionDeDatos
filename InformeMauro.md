@@ -328,15 +328,35 @@ Es importante notar que la cantidad de tweets con [https] es mucho menor a la ca
 
 ### Ubicaciones: Relación condados costeros de Estados Unidos y el ratio de desastres reales.
 
-#### Introduccion
+Este análisis fue realizado gracias a información por fuera del dataset, que tuvo como objetivo explorar la distribución de sucesos reales ocurridos en condados costeros de Estados Unidos, para posterior análisis de la relación que tiene con desastres frecuentes en ese tipo de zonas.
 
+Para esto se obtuvo la información de una [lista de condados costeros] de Estados Unidos provista por el _Economics: National Ocean Watch_, a partir de la cual se generó por elaboración propia un _csv_ con todos los datos provistos necesarios para el análisis. Esto luego permitió combinar los datos con nuestro dataset y asociarlo a ubicaciones reales provistas por el análisis geográfico realizado con GeoPy.
 
+El análisis hizo foco en Estados Unidos ya que es el país con mayor participación en ubicaciones encontradas por el análisis geográfico según conclusión de **Top países participantes**.
+Es así que entonces se procedió a generar un dataframe que mejor ajuste a la necesidad del análisis agregando la información a la ya provista por _locations.csv_ y separando en columnas útiles que facilitasen la realización de una visualización.
 
-#### Inserte mapa (hacerlo más grande? ask mile pq by_address no andaba)
+Para realizar la visualización se utilizó la biblioteca [Plotly] que es una librería gráfica de código abierto, con el objetivo de graficar la distribución de sucesos reales ocurridos en condados costeros utlizando el [USA County Choropleth] que permite graficar el país Estados Unidos a partir de los valores de [FIPS] que había en la lista previamente mencionada.
+
+Debajo se puede apreciar la distribución de sucesos reales ocurridos en condados costeros de Estados Unidos.
 
 ![Gráfico](img/distrib_real_tweets_usa.png)
 
-En base a lo visto arriba en el mapa, se analiza qué tipo de desastres ocurrieron en dichas ubicaciones.
 
-Hipotesis: Como se vio en las coastal counties uno imaginaria que las keywords de dichos tweets estarian relacionados a desastres comunes en proporcion normal y naturales en proporcion mayor, entre los cuales podria estar inundaciones, huracanes, tornados, tormentas tropicales (florida), entre otros desastres naturales que suelen ocurrir en zonas costeras.
+En base a lo visto arriba en el mapa, se procedió a analizar qué tipo de desastres ocurrieron en dichas ubicaciones.
 
+**Hipótesis**: Dado que se pretende ver qué tipo de desastres son mencionados por los tweets reales, si se analizan las keywords de dichos tweets se espera que hablen sobre desastres comunes en una proporción normal, mientras que para desastres naturales como inundaciones, huracanes, tormentas tropicales (mayormente en el estado de Florida), terremotos (California), entre otros desastres naturales que suelen ocurrir en zonas costeras, se espera que se mencionen en una mayor proporción.
+Para esto se realizó un gráfico que permite observar las 20 keywords más mencionadas en tweets reales.
+
+![Gráfico](img/top_desastres_costeros_reales.png)
+
+**Conclusión**: Por lo visto en el gráfico, la hipótesis no fue confirmada en su totalidad, pero si muestra una tendencia a nombrar estos tipos de desastres comunes a zonas costeras. El caso más notorio es el de inundaciones (provistas por _flood_ y _flooding_) que es el más mencionado.
+Es importante mencionar que como sucedió con las ubicaciones de los tweets en general, existen redundancias (como la mencionada previamente) que puede sesgar el análisis, y que no es viable analizar caso por caso ya que por ejemplo se mencionan _buildings on fire_ y _burning buildings_ que a menos que se los analice individualmente no es posible agruparlos.
+Sin embargo, no se demuestra una variedad de estos tipos de desastres comunes a zonas costeras según la hipótesis, ya que aún formando parte del top, keywords como _typhoon, evacuated y catastrophic_ no son mayormente mencionadas y el caso particular de las últimas dos no necesariamente pueden referirse a desastres naturales de los mencionados previamente.
+
+Aún así, se puede ver que hay keywords que _pueden_ estar relacionadas a este tipo de desastres, con lo cual se puede ver que existe cierta relación entre la ubicación del tweet y el tipo de desastre sobre el que habla.  
+
+
+[Plotly]: https://plotly.com/python/
+[FIPS]: https://en.wikipedia.org/wiki/FIPS_county_code
+[USA County Choropleth]: https://plotly.com/python/county-choropleth/
+[lista de condados costeros]: https://coast.noaa.gov/digitalcoast/training/enow-counties-list.html
