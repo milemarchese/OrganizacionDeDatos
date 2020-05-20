@@ -181,13 +181,13 @@ __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con ma
 
 [top 15]: https://datareportal.com/reports/digital-2020-global-digital-overview
 
-### Relación real-fake si location y/o keyword es nulo
+### Tweets con y sin ubicación o keyword nula
 
 * Los tweets con keyword nula, son solo 56 de un set de más de 7600. No representa una muestra significativa para sacar una conclusión.
 
-* Respecto a los tweets de ubicación nula los reales y los falsos continuan manteniendo la proporción de 58%-42%. Se decide aplicar un filtro más agrupándolos por largo del tweet, como se analizó previamente la totalidad del texto del set para buscar una relación entre cantidad de caracteres y nivel de veracidad según la falta de ubicación.
+* Respecto a los tweets de ubicación nula los reales y los falsos continuan manteniendo la proporción de 58%-42%. Se decide aplicar un filtro más agrupándolos por largo del tweet, como se analizó previamente la totalidad del texto del set para buscar una relación entre cantidad de caracteres y nivel de veracidad según la falta de ubicación. A su vez se agrega la comparación segun cantidad de caracteres al subset de tweets con ubicación real.
 
-![Gráfico](img/grafico_no_location_rf.png)
+![Gráfico](img/tweets_con_sin_ubicacion.png)
 
-__Conclusión:__ Como se observa en el gráfico no se encuentra una relación entre grado de veracidad y si el tweet tiene una ubicación, y que el subset de tweets sin ubicación tiene un comportamiendo análogo al set completo dando un indicio de uniformidad en cuanto a la distribución de tweets reales y falsos del dataset.
+__Conclusión:__ Como se observa en el gráfico no se encuentra una relación entre grado de veracidad según cantidad de caracteres y si el tweet tiene una ubicación o no, y que ambos análisis de subsets de tweets tienen un comportamiendo análogo entre sí y con el dataset completo dando un indicio de uniformidad en cuanto a la distribución de tweets reales y falsos del dataset.
 
