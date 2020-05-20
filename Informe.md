@@ -81,7 +81,7 @@ Los 10 lugares con mayor cantidad de tweets sobre desastres falsos:
 
 __Conclusiones:__ A priori los resultados son pequeños en proporción al tamaño del set. No podemos asegurar que haya una relación entre ubicación del tweet y nivel de veracidad. Se puede observar una tendencia a que ciudades de Estados Unidos compongan los dos top 10 pero esto puede ser explicado por las [estadísticas] de la red social Twitter que muestran que Estados Unidos compone el 64.2% de los usuarios, y así también la ciudad de Nueva York, que se encuentra en ambos top 10, es la ciudad más poblada de Estados Unidos. 
 
-[estadísticas] = https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/
+[estadísticas]: https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/
 
 ### Ubicaciones no encontradas
 
@@ -147,8 +147,6 @@ Según grado de veracidad del tweet:
 ![Gráfico](img/grafico_top_paises_veracidad.png)
 
 __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con mayor cantidad de tweets del set.
-
-
 
 ### Relación real-fake si location y/o keyword es nulo
 
