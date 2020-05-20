@@ -191,3 +191,40 @@ __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con ma
 
 __Conclusión:__ Como se observa en el gráfico no se encuentra una relación entre grado de veracidad según cantidad de caracteres y si el tweet tiene una ubicación o no, y que ambos análisis de subsets de tweets tienen un comportamiendo análogo entre sí y con el dataset completo dando un indicio de uniformidad en cuanto a la distribución de tweets reales y falsos del dataset.
 
+
+### Hashtags mas usados en los tweets
+Con lo calculado previamente en trending topics por ubicacion, se decidio tambien analizar cuales eran los mas utilizados sin importar la ubicacion.
+
+![Gráfico](img/top_hashtags.png)
+
+__Conclusión:__ Podemos observar que, por lejos, "#news" es el mas utilizado, sin embargo no sabemos con certeza si es por los tweets reales o falsos, para eso podemos realizar un segundo analisis en donde los separamos y analizamos lo mismo.
+
+![Gráfico](img/top_hashtags_separados.png)
+
+__Conclusión:__ Ahora que obtuvimos los datos separados, podemos concluir que "#news" viene de ambas partes, sin embargo la mayor cantidad, casi 2/3, se encuentran en los reales; mientras que del segundo mas usado al cuarto, la cantidad de veces usado en falsos  es casi identica a la cantidad de veces usado en los verdaderos.
+Para una mayor distincion, se grafican, separados por veracidad, los hashtags mas usados por cada uno.
+
+![Gráfico](img/top_hashtags_reales.png)
+
+![Gráfico](img/top_hashtags_falsos.png)
+
+Para estos ultimos graficos se utilizó la herramienta [wordcloud] e [imageio].
+
+[wordcloud]: https://pypi.org/project/wordcloud/
+[imageio]: https://pypi.org/project/imageio/
+
+### Palabras mas usadas en los tweets
+Para este analisis se decicio separar a los verdaderos y los falsos, y analizar si existia alguna diferencia entre las palabras que mas aparecen.
+
+![Gráfico](img/top_palabras_falsos.png)
+
+![Gráfico](img/top_palabras_reales.png)
+
+__Conclusión:__ Podemos ver que las palabras mas usadas en falsos tienen una mayor diferencia en la cantidad con respecto a las verdaderas, puesto que el descenso en la cantidad de repeticiones en los falsos es mucho mas rapido que en el de su contraparte, esto se puede deber a que en los tweets falsos se suelen utilizar muchas mas palabras,evitando asi concentraciones de unas pocas; mientras que en los reales existe un conjunto de palabras similares que suele repetirse (por ejemplo: "people/kill/police/disaster" / "gente,asesinar,policia,desastre" ).
+
+### Similitudes entre tweets
+Se busco analizar el parecido entre los propios tweets (verdaderos y falsos separados) para ver si existia alguna relacion. Para ello utilizamos LHS y fuimos variando que porcentaje de similitud minimo tenian que tener para ser considerados parecidos. Para obtener una mayor cantidad de valores decidimos variar esta similitud desde 1% hasta 99% escalando de a 1%, y en cada paso calcular el promedio general de cuantos parecidos tienen los tweets.
+
+![Gráfico](img/parecidos_tweets.png)
+
+__Conclusión:__ Se aprecia que cuando el porcentaje de similitud esta por debajo del 10% se obtienen muchos tweets similares, con la particularidad de que en los verdaderos el parecido se da mucha menos veces que en los falsos. Vemos que sin embargo, este parecido entre tweets no dura mucho, pues cuando el minimo de similitud ronda el 20% decae abruptamente la cantidad de parecidos; sin embargo la cantidad de parecidos de los falsos supera la cantidad de los verdaderos para igual umbral minimo de similitud.
