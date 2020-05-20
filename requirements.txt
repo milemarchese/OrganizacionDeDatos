@@ -15,3 +15,4 @@ squarify==0.4.3
 plotly-geo==1.0.0
 pyshp==2.1.0
 descartes=1.1.0
+datasketch==1.5.1
