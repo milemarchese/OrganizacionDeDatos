@@ -239,7 +239,7 @@ __Conclusiones:__ Si bien no hay una cantidad de menciones suficientes para saca
 ## Texto: Hashtags
 
 ### Hashtags más usados en los tweets
-Con lo calculado previamente en trending topics por ubicacion, se decidio tambien analizar cuales eran los más utilizados sin importar la ubicacion.
+Para este analisis, se busco los hashtags que tenian algunos tweets, se aislaron y se analizo cuales eran los mas usados.
 
 ![Gráfico](img/top_hashtags.png)
 
@@ -262,7 +262,7 @@ Para estos últimos gráficos se utilizó la herramienta [wordcloud] e [imageio]
 
 ### Trending topics en las ubicaciones más recurrentes
 
-Para el siguiente análisis se filtró y aisló, del texto de los tweets, los hashtags allí contenidos. Finalmente agrupando por la máxima ocurrencia de tanto los hashtags como las ubicaciones allí twitteadas.
+En este analisis se utilizaron los hashtags previamente obtenidos, sin embargo se enfoca en ver como se relaciona con las ubicaciones.
 
 ![Gráfico](img/tt_por_pais.png)
 
