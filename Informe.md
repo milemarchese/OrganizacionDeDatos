@@ -30,7 +30,7 @@ La distribución reales contra falsos es de un 58% de falsos contra un 42% de re
 
 ### Palabras más usadas en los tweets
 
-Para este análisis se decidió separar a los verdaderos y los falsos, y analizar si existía alguna diferencia entre las palabras que más aparecen.
+Para este análisis se decidió separar a los verdaderos de los falsos, y analizar si existía alguna diferencia entre las palabras que más aparecen.
 
 ![Gráfico](img/top_palabras_falsos.png)
 
@@ -96,7 +96,7 @@ De este gráfico se concluye que:
 * Se logra apreciar que existe relación entre si el tweet sobrepasa el largo promedio en caracteres y la cantidad de palabras utilizadas.
 
 
-### Sentimiento del tweet.
+### Sentimiento del tweet
 
 Para realizar el siguiente análisis, se utilizó una de las bibliotecas ofrecidas por
 [NLKT], la cual brinda información acerca de qué porcentaje de sentimiento neutro, sentimiento positivo, sentimiento negativo y su respectivo compuesto de los tipos transmite el texto estudiado.
@@ -166,7 +166,7 @@ Adicionalmente se calcularon analíticamente los promedios para complementar est
 * Promedio de caracteres de puntuación en tweets reales: 7.567937
 * Promedio de caracteres de puntuación en tweets falsos: 6.263785
 
-Esto reafirma lo dicho arriba ya que se ve que el uso de puntuación es un poco mayor en tweets reales.
+Esto reafirma lo dicho arriba, ya que se ve que el uso de puntuación es un poco mayor en tweets reales.
 
 [string]: https://docs.python.org/2/library/string.html
 
@@ -225,6 +225,20 @@ Es importante notar que la cantidad de tweets con [https] es mucho menor a la ca
 [https]: https://en.wikipedia.org/wiki/HTTPS
 [twitter developer]: https://developer.twitter.com/en/docs/basics/tco
 
+Por último, se analizaron casos en los que los links aparecían más de una vez. Estos casos fueron muy acotados (29) pero permitieron realizar la siguiente visualización.
+
+![Gráfico](img/cant_links_repetidos.png)
+
+A partir de ésto se pudo observar que sólamente un caso (http://t.co/cybKsXHF7d) tenía apariciones en tanto tweets reales como falsos, lo cual genera una contradicción. Éste link redirecciona a un video de la plataforma YouTube que se titula: _The Coming West Coast Earthquake and Tsunami - Cascadia Subduction Zone Disaster_ publicado en Agosto del 2015 que brinda información sobre la [falla de Cascadia]. A partir de éste título se puede inferir que se trata de una predicción sobre un desastre que puede ocurrir.
+Adicionalmente, el vídeo fue publicado poco tiempo despúes de [ésta nota], que evidencia que se trata de un desastre natural que aún no había ocurrido, pero que podía ocurrir en el futuro.
+Extendiendo ésta investigación, se ubicó [ésta otra nota] publicada en Enero del 2020 de una agencia de noticias local del condado de Oregon en Estados Unidos, que se refiere a éste desastre natural de gran magnitud, que aún no ocurrió y puede ocurrir en el futuro.
+
+Es así entonces que éste análisis permitió obtener información real sobre un desastre natural predicho a ocurrir en el futuro. Así como tambien estimar la fecha aproximada del contenido del dataset, la cual no fue provista y no se puede saber con exactitud.
+
+[ésta nota]: https://www.newyorker.com/magazine/2015/07/20/the-really-big-one
+[ésta otra nota]: https://kval.com/news/local/january-26-1700-90-cascadia-subduction-zone-earthquake-strikes-pacific-northwest
+[falla de Cascadia]: https://en.wikipedia.org/wiki/Cascadia_subduction_zone
+
 ## Texto: Menciones
 
 ### Personas más mencionadas
@@ -255,8 +269,9 @@ __Conclusión:__ Podemos observar que, por lejos, "#news" es el más utilizado, 
 __Conclusión:__ Ahora que obtuvimos los datos separados, podemos concluir que "#news" viene de ambas partes, sin embargo la mayor cantidad, casi 2/3, se encuentran en los reales; mientras que del segundo más usado al cuarto, la cantidad de veces usado en falsos  es casi identica a la cantidad de veces usado en los verdaderos.
 Para una mayor distincion, se grafican, separados por veracidad, los hashtags más usados por cada uno.
 
+**Wordcloud de hashtags reales:**
 ![Gráfico](img/top_hashtags_reales.png)
-
+**Wordcloud de hashtags falsos:**
 ![Gráfico](img/top_hashtags_falsos.png)
 
 Para estos últimos gráficos se utilizó la herramienta [wordcloud] e [imageio].
@@ -267,7 +282,7 @@ Para estos últimos gráficos se utilizó la herramienta [wordcloud] e [imageio]
 
 ### Trending topics en las ubicaciones más recurrentes
 
-En este analisis se utilizaron los hashtags previamente obtenidos, sin embargo se enfoca en ver como se relaciona con las ubicaciones.
+En este análisis se utilizaron los hashtags previamente obtenidos, sin embargo se enfoca en ver como se relaciona con las ubicaciones.
 
 ![Gráfico](img/tt_por_pais.png)
 
@@ -387,7 +402,7 @@ __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con ma
 
 * Los tweets con keyword nula, son solo 56 de un set de más de 7600. No representa una muestra significativa para sacar una conclusión.
 
-* Respecto a los tweets de ubicación nula los reales y los falsos continuan manteniendo la proporción de 58%-42%. Se decide aplicar un filtro más agrupándolos por largo del tweet, como se analizó previamente la totalidad del texto del set para buscar una relación entre cantidad de caracteres y nivel de veracidad según la falta de ubicación. A su vez se agrega la comparación segun cantidad de caracteres al subset de tweets con ubicación real.
+* Respecto a los tweets de ubicación nula los reales y los falsos continuan manteniendo la proporción de 58% - 42%. Se decide aplicar un filtro más, agrupándolos por largo del tweet, como se analizó previamente la totalidad del texto del set para buscar una relación entre cantidad de caracteres y nivel de veracidad según la falta de ubicación. A su vez se agrega la comparación segun cantidad de caracteres al subset de tweets con ubicación real.
 
 ![Gráfico](img/tweets_con_sin_ubicacion.png)
 
