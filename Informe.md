@@ -88,7 +88,12 @@ Una vez hecho esto se realizó un mapa de calor (_heatmap_) que muestra la corre
 
 [Pearson]: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
 
-**Conclusiones del heatmap pendientes**
+De este gráfico se concluye que:
+* El largo del tweet en caracteres no está profundamente relacionado con su veracidad.
+* La relación entre cantidad de palabras en el tweet y el largo de cada palabra promedio poseen una relación casi diametralmente opuesta.
+* Se puede observar que existe mínima relación entre varias columnas.
+* El largo del tweet está ampliamente relacionado con la cantidad de palabras, la cantidad de palabras unicas y si sobrepasa el largo promedio, como era previsible.
+* Se logra apreciar que existe relación entre si el tweet sobrepasa el largo promedio en caracteres y la cantidad de palabras utilizadas.
 
 
 ### Sentimiento del tweet.
@@ -428,9 +433,24 @@ Aún así, se puede ver que hay keywords que _pueden_ estar relacionadas a este 
 
 ### Top 50 desastres comentados en los tweets
 
+Se realizó la pregunta de cual era la distribución de desastres en los tweets, es decir, si había un o un grupo de desastres predominantes por sobre el resto. 
+Para este estudio se utilizó la columna *keyword*, que representa el desastre al que hace mención el tweet. Se procedió a agrupar por esta columna, calculando sus apariciones en el mismo proceso, luego se ordenaron por sus apariciones y se representó en el siguiente gráfico.
+
+
 ![Gráfico](img/grafico_50_desastres.png)
+
+**Conclusión**: Podemos observar una alta homogeneidad de apariciones, rondando la mayoria entre las 30 y 40 concurrencias, por lo que no se pudo concluir en una preponderancia de desastre.
 
 ### Top desastres por ubicación
 
+Continuando con el análisis anterior, se realizó un filtrado más profundo y se agrupó, también, por ubicación para así encontrar alguna información precisa. Estas ubicaciones son las más recurrentes y estos son sos desastres mas comunes.
+
 ![Gráfico](img/top_desastres_por_ciudad.png)
 
+Haciendo una busqueda externa se encontró información complementaria sobre los desastres relatados en las ubicaciones.
+Se puede observar una clara tendencia al desastre *wounded* (heridos), en Estados Unidos y Nueva York (estado perteneciente al país mencionado). Segundos en cantidad aparecen *wild fires* (incendio forestal), predominante en zonas como [Londres] (posible alución a aquellos ocurridos en 2019) y [Mumbai] (sufrió uno en 2018); y *wreckage* (destrucción) en [Australia] probablemente aludiendo a la caída de un avión C-130, perteneciente al ejercito estadounidense.
+
+[Londres]: https://en.wikipedia.org/wiki/2019_United_Kingdom_wildfires
+[Mumbai]: https://www.ndtv.com/mumbai-news/4-km-wide-fire-in-north-west-mumbai-forest-threatens-residential-areas-1957355
+[Australia]: https://www.abc.net.au/news/2020-01-25/nsw-police-investigate-crash-site-of-c-130-used-in-bushfires/11900654
+ 
