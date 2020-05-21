@@ -1,8 +1,10 @@
 # 75.06/95.58 Organizacion De Datos 2020cCovid
 
-## Trabajo Practico Nro 1
+## Trabajo Practico Número 1
 
-El trabajo práctico 1 de la materia se basa en el análisis de los tweets del set de datos de la competencia: https://www.kaggle.com/c/nlp-getting-started.  
+## Grupo: El tío del marido de Pampita
+
+El Trabajo Práctico 1 de la materia se basa en el análisis de los tweets del set de datos de la competencia: https://www.kaggle.com/c/nlp-getting-started.  
 
 - id - identificador unico para cada  tweet
 - text - el texto del tweet
@@ -20,3 +22,13 @@ https://docs.google.com/document/d/1dv1VoTD5g1HlDLeVmfgp4fTP7fenykT-EnKnuWBCvFs/
 $ pip install -r requirements.txt
 ```
 
+## Referencias:
+![Gráfico](readme/m3.png)
+
+---
+
+![Gráfico](readme/m1.png)
+
+---
+
+![Gráfico](readme/m2.png)
