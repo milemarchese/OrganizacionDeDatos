@@ -225,6 +225,8 @@ Es importante notar que la cantidad de tweets con [https] es mucho menor a la ca
 [https]: https://en.wikipedia.org/wiki/HTTPS
 [twitter developer]: https://developer.twitter.com/en/docs/basics/tco
 
+### Repiticiones en links
+
 Por último, se analizaron casos en los que los links aparecían más de una vez. Estos casos fueron muy acotados (29) pero permitieron realizar la siguiente visualización.
 
 ![Gráfico](img/cant_links_repetidos.png)
@@ -233,7 +235,7 @@ A partir de ésto se pudo observar que sólamente un caso (http://t.co/cybKsXHF7
 Adicionalmente, el vídeo fue publicado poco tiempo despúes de [ésta nota], que evidencia que se trata de un desastre natural que aún no había ocurrido, pero que podía ocurrir en el futuro.
 Extendiendo ésta investigación, se ubicó [ésta otra nota] publicada en Enero del 2020 de una agencia de noticias local del condado de Oregon en Estados Unidos, que se refiere a éste desastre natural de gran magnitud, que aún no ocurrió y puede ocurrir en el futuro.
 
-Es así entonces que éste análisis permitió obtener información real sobre un desastre natural predicho a ocurrir en el futuro. Así como tambien estimar la fecha aproximada del contenido del dataset, la cual no fue provista y no se puede saber con exactitud.
+Es así entonces que éste análisis permitió obtener información real sobre un desastre natural por ocurrir. Así como tambien estimar la fecha aproximada del contenido del dataset, la cual no fue provista y no se puede saber con exactitud.
 
 [ésta nota]: https://www.newyorker.com/magazine/2015/07/20/the-really-big-one
 [ésta otra nota]: https://kval.com/news/local/january-26-1700-90-cascadia-subduction-zone-earthquake-strikes-pacific-northwest
@@ -408,7 +410,43 @@ __Conclusión:__ La hipótesis fue confirmada, Estados Unidos es el país con ma
 
 __Conclusión:__ Como se observa en el gráfico no se encuentra una relación entre grado de veracidad según cantidad de caracteres y si el tweet tiene una ubicación o no, y que ambos análisis de subsets de tweets tienen un comportamiendo análogo entre sí y con el dataset completo dando un indicio de uniformidad en cuanto a la distribución de tweets reales y falsos del dataset.
 
+## Desastres
 
+### Top 50 desastres comentados en los tweets
+
+Se realizó la pregunta de cual era la distribución de desastres en los tweets, es decir, si había un o un grupo de desastres predominantes por sobre el resto. 
+Para este estudio se utilizó la columna *keyword*, que representa el desastre al que hace mención el tweet. Se procedió a agrupar por esta columna, calculando sus apariciones en el mismo proceso, luego se ordenaron por sus apariciones y se representó en el siguiente gráfico.
+
+
+![Gráfico](img/grafico_50_desastres.png)
+
+**Conclusión**: Podemos observar una alta homogeneidad de apariciones, rondando la mayoria entre las 30 y 40 concurrencias, por lo que no se pudo concluir en una preponderancia de desastre.
+
+### Veracidad de los desastres
+
+Ademas de lo analizado previamente, se buscó que tan reales eran estos desastres. Para ello se calculó el promedio de verdad (cuantas veces aparecian en un tweet real divido la cantidad de veces totales que aparece). De esta forma podemos observar cuales desastres son mas reales que otros.
+
+![Gráfico](img/grafico_veracidad_por_desastre.png)
+
+**Conclusión**: Podemos ver que los primeros tres con mayor promedio poseen un 100%. Por lo que cada vez que se hizo mencion de ese desastre en un tweet esta era real; mientras que los otros top 7 se mantienen por arriba de un 80% de probabilidad de ser verdadero.
+Ademas, podemos observar que en los menos verdaderos, el porcentaje es extramadamente bajo, ninguno supera el 7%, llegando incluso al punto en el que "aftershock" posee 0%.
+A su vez, si volvemos a mirar el grafico de los desastres más comentados, encontramos que los que más se usan no estan entre los mas reales.
+
+
+### Top desastres por ubicación
+
+Continuando con el análisis anterior, se realizó un filtrado más profundo y se agrupó, también, por ubicación para así encontrar alguna información precisa. Estas ubicaciones son las más recurrentes y estos son sos desastres mas comunes.
+
+![Gráfico](img/top_desastres_por_ciudad.png)
+
+Haciendo una busqueda externa se encontró información complementaria sobre los desastres relatados en las ubicaciones.
+Se puede observar una clara tendencia al desastre *wounded* (heridos), en Estados Unidos y Nueva York (estado perteneciente al país mencionado). Segundos en cantidad aparecen *wild fires* (incendio forestal), predominante en zonas como [Londres] (posible alución a aquellos ocurridos en 2019) y [Mumbai] (sufrió uno en 2018); y *wreckage* (destrucción) en [Australia] probablemente aludiendo a la caída de un avión C-130, perteneciente al ejercito estadounidense.
+
+[Londres]: https://en.wikipedia.org/wiki/2019_United_Kingdom_wildfires
+[Mumbai]: https://www.ndtv.com/mumbai-news/4-km-wide-fire-in-north-west-mumbai-forest-threatens-residential-areas-1957355
+[Australia]: https://www.abc.net.au/news/2020-01-25/nsw-police-investigate-crash-site-of-c-130-used-in-bushfires/11900654
+
+ 
 ### Relación condados costeros de Estados Unidos y el ratio de desastres reales.
 
 Este análisis fue realizado gracias a información por fuera del dataset, que tuvo como objetivo explorar la distribución de sucesos reales ocurridos en condados costeros de Estados Unidos, para posterior análisis de la relación que tiene con desastres frecuentes en ese tipo de zonas.
@@ -443,29 +481,3 @@ Aún así, se puede ver que hay keywords que _pueden_ estar relacionadas a este 
 [FIPS]: https://en.wikipedia.org/wiki/FIPS_county_code
 [USA County Choropleth]: https://plotly.com/python/county-choropleth/
 [lista de condados costeros]: https://coast.noaa.gov/digitalcoast/training/enow-counties-list.html
-
-## Desastres
-
-### Top 50 desastres comentados en los tweets
-
-Se realizó la pregunta de cual era la distribución de desastres en los tweets, es decir, si había un o un grupo de desastres predominantes por sobre el resto. 
-Para este estudio se utilizó la columna *keyword*, que representa el desastre al que hace mención el tweet. Se procedió a agrupar por esta columna, calculando sus apariciones en el mismo proceso, luego se ordenaron por sus apariciones y se representó en el siguiente gráfico.
-
-
-![Gráfico](img/grafico_50_desastres.png)
-
-**Conclusión**: Podemos observar una alta homogeneidad de apariciones, rondando la mayoria entre las 30 y 40 concurrencias, por lo que no se pudo concluir en una preponderancia de desastre.
-
-### Top desastres por ubicación
-
-Continuando con el análisis anterior, se realizó un filtrado más profundo y se agrupó, también, por ubicación para así encontrar alguna información precisa. Estas ubicaciones son las más recurrentes y estos son sos desastres mas comunes.
-
-![Gráfico](img/top_desastres_por_ciudad.png)
-
-Haciendo una busqueda externa se encontró información complementaria sobre los desastres relatados en las ubicaciones.
-Se puede observar una clara tendencia al desastre *wounded* (heridos), en Estados Unidos y Nueva York (estado perteneciente al país mencionado). Segundos en cantidad aparecen *wild fires* (incendio forestal), predominante en zonas como [Londres] (posible alución a aquellos ocurridos en 2019) y [Mumbai] (sufrió uno en 2018); y *wreckage* (destrucción) en [Australia] probablemente aludiendo a la caída de un avión C-130, perteneciente al ejercito estadounidense.
-
-[Londres]: https://en.wikipedia.org/wiki/2019_United_Kingdom_wildfires
-[Mumbai]: https://www.ndtv.com/mumbai-news/4-km-wide-fire-in-north-west-mumbai-forest-threatens-residential-areas-1957355
-[Australia]: https://www.abc.net.au/news/2020-01-25/nsw-police-investigate-crash-site-of-c-130-used-in-bushfires/11900654
- 
