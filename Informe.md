@@ -26,18 +26,17 @@ La distribución reales contra falsos es de un 58% de falsos contra un 42% de re
 
 ![Gráfico](img/grafico_distribucion_set.png)
 
-## Desastres
-
 ## Texto
 
 ### Palabras más usadas en los tweets
+
 Para este análisis se decidió separar a los verdaderos y los falsos, y analizar si existía alguna diferencia entre las palabras que más aparecen.
 
 ![Gráfico](img/top_palabras_falsos.png)
 
 ![Gráfico](img/top_palabras_reales.png)
 
-__Conclusión:__ Podemos ver que las palabras más usadas en falsos tienen una mayor diferencia en la cantidad con respecto a las verdaderas, puesto que el descenso en la cantidad de repeticiones en los falsos es mucho más rapido que en el de su contraparte, esto se puede deber a que en los tweets falsos se suelen utilizar muchas más palabras,evitando asi concentraciones de unas pocas; mientras que en los reales existe un conjunto de palabras similares que suele repetirse (por ejemplo: "people/kill/police/disaster" / "gente,asesinar,policia,desastre" ).
+__Conclusión:__ Podemos ver que las palabras más usadas en falsos tienen una mayor diferencia en la cantidad con respecto a las verdaderas, puesto que el descenso en la cantidad de repeticiones en los falsos es mucho más rapido que en el de su contraparte, esto se puede deber a que en los tweets falsos se suelen utilizar muchas más palabras, evitando así concentraciones de unas pocas; mientras que en los reales existe un conjunto de palabras similares que suele repetirse (por ejemplo: "fire/via/suicide/killed").
 
 
 ### Metaanálisis - Métricas de longitud del tweet y derivados.
@@ -117,7 +116,7 @@ Como complemento al análisis gráfico se calcularon los valores medios de los t
 
 Adicionalmente, se realizó una visualización sobre los valores individuales de los sentimientos que brindó NLKT, de los cuales se obtuvo lo siguiente.
 
-![Gráfico](img/cant_tw_mas_menos_seguro.png)
+![Gráfico](img/sentimiento_porcentaje_sobre_total.png)
 
 Esta última visualización permite observar de manera más analítica que los tweets reales tienen mucho menor contenido positivo que los falsos que se distribuyen de manera más equitativa.
 
@@ -177,6 +176,8 @@ __Conclusión:__ Se aprecia que cuando el porcentaje de similitud esta por debaj
 [LHS]: https://en.wikipedia.org/wiki/Locality-sensitive_hashing
 
 ## Texto: Links
+
+### Relación entre links contenidos en tweets y veracidad
 
 En esta sección del análisis se pretendió ver la relación entre la utilización de links en tweets y la veracidad de ellos.
 Para lograr esto se añadió una columna que especifica si el tweet posee un link, de manera que se pueda analizar la cantidad de tweets que poseen links y ver qué tipo de relación conlleva con la veracidad.
@@ -422,4 +423,14 @@ Aún así, se puede ver que hay keywords que _pueden_ estar relacionadas a este 
 [FIPS]: https://en.wikipedia.org/wiki/FIPS_county_code
 [USA County Choropleth]: https://plotly.com/python/county-choropleth/
 [lista de condados costeros]: https://coast.noaa.gov/digitalcoast/training/enow-counties-list.html
+
+## Desastres
+
+### Top 50 desastres comentados en los tweets
+
+![Gráfico](img/grafico_50_desastres.png)
+
+### Top desastres por ubicación
+
+![Gráfico](img/top_desastres_por_ciudad.png)
 
