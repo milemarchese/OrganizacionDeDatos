@@ -10,3 +10,13 @@ TP2/glove.840B.300d.pkl
 TP2/crawl-300d-2M.pkl
 TP2/glove.840B.300d.txt
 TP2/perfect_submission.csv
+TP2/Embeddings/glove.twitter.27B.50d.txt
+TP2/Embeddings/glove.twitter.27B.25d.txt
+TP2/Embeddings/glove.twitter.27B.200d.txt
+TP2/Embeddings/glove.twitter.27B.100d.txt
+TP2/Embeddings/glove.840B.300d.txt
+TP2/Embeddings/glove.840B.300d.pkl
+TP2/Embeddings/glove.6B.50d.txt
+TP2/Embeddings/glove.6B.200d.txt
+TP2/Embeddings/glove.6B.100d.txt
+TP2/Embeddings/crawl-300d-2M.pkl
