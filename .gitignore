@@ -20,3 +20,5 @@ TP2/Embeddings/glove.6B.50d.txt
 TP2/Embeddings/glove.6B.200d.txt
 TP2/Embeddings/glove.6B.100d.txt
 TP2/Embeddings/crawl-300d-2M.pkl
+TP2/processed_test_nosw.csv
+TP2/processed_train_nosw.csv
