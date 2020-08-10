@@ -4,11 +4,10 @@
 
 ## Grupo: El tío del marido de Pampita
 
-- [División de tareas + Feature Engineering] (google doc)
+- [Enunciado]
 
-[División de tareas + Feature Engineering]: https://docs.google.com/document/d/1kklHcnP6xqFMYM-5U1-iKOXyTXZQfk4f9H4QjeX_EeU/edit?usp=sharing
+[Enunciado]: https://docs.google.com/document/d/13R-aQRZYlOUM6a1g-eU09wGG2Q6b22ewyEnSUYJRi9I/edit
 
-- [Submit History] (google doc)
+- [Competencia]
 
-[Submit History]: https://docs.google.com/document/d/1XXnN6l2H05xXuVQUIQgtBClAENVplKxIgYkr34u1qKE/edit?usp=sharing
-
+[Competencia]: https://www.kaggle.com/c/nlp-getting-started/
