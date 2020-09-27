@@ -1,0 +1,67 @@
+correrlo con y sin stopwords el nuevo - Con processed_text parece ser mas consistentemente alto. idk
+BoW basico ver q onda - Done! muy choto pierdo tiempo
+hacer feature importance - Done!
+
+Aún así, se comprende la mejoría de resultados al utilizar BERT ya que fue desarrollado por una compañía tan prestigiosa como Google.
+
+top densas:
+11-14
+130-135
+146-150
+
+219-223
+
+- Conv1d+LSTM obviamente no iba a andar -> no anduvo.
+
+- Bert nos da mas de 109 millones de params entrenables (109.590.921) (sin stopwords en lugar del processed solo tiene 109.701.577 params)
+
+
+- Lo de los id es polemico porque en teoria no deberian aportar nada, pero parece ser que dado que el mejor submit tiene id como feature, aportan al menos algo. Y en el feature importance parece que importa bastante ya que rankea bastante alto.
+
+ -Gaussian noise with mean 0.001 is added to the input multichannel word embedding, to overcome and prevent overfitting; we also add the weight constraint 5 to the last Softmax layer weight.
+
+
+
+
+Convolutional Neural Networks (CNN)
+Convolutional neural networks or also called convnets are one of the most exciting developments in machine learning in recent years.
+
+They have revolutionized image classification and computer vision by being able to extract features from images and using them in neural networks. The properties that made them useful in image processing makes them also handy for sequence processing. You can imagine a CNN as a specialized neural network that is able to detect specific patterns.
+
+A CNN has hidden layers which are called convolutional layers. When you think of images, a computer has to deal with a two dimensional matrix of numbers and therefore you need some way to detect features in this matrix. These convolutional layers are able to detect edges, corners and other kinds of textures which makes them such a special tool. The convolutional layer consists of multiple filters which are slid across the image and are able to detect specific features.
+
+
+
+
+
+The concept of early stopping is commonly applied to the GBM and to deep neural networks so it's a great technique to understand. This is one of many forms of regularization that aims to improve generalization performance on the testing set by not overfitting to the training data. If we keep adding estimators, the training error will always decrease because the capacity of the model increases. Although this might seem positive, it means that the model will start to memorize the training data and then will not perform well on new testing data. The variance of the model increases as we continue adding estimators because the model starts to rely too heavily on the training data (high variance means overfitting).
+
+
+Choosing a hyperparameter grid is probably the most difficult part of hyperparameter tuning: it's nearly impossible ahead of time to say which values of hyperparameters will work well and the optimal settings will depend on the dataset. Moreover, the hyperparameters have complex interactions with each other which means that just tuning one at a time doesn't work because when we start changing other hyperparameters that will affect the one we just tuned!
+
+If we have prior experience with a model, we might know where the best values for the hyperparameters typically lie, or what a good search space is. However, if we don't have much experience, we can simply define a large search space and hope that the best values are in there somewhere. Typically, when first using a method, I define a wide search space centered around the default values. Then, if I see that some values of hyperparameters tend to work better, I can concentrate the search around those values.
+
+
+
+
+
+
+In a later notebook (upcoming), we will look at methods that use the past evaluation results to pick the next hyperparameter values to try in the objective function. These methods (including Bayesian optimization) are essentially doing what we would do in the strategy outlined above: adjust the next values tried in the search from the previous results. The overall objective of these informed methods is to limit evaluations of the objective function by reasoning about the next values to try based on past evaluation results. These algorithms are therefore able to save time by evaluating more promising values of hyperparameters. This is a really cool topic and Bayesian optimization is fascinating so stay tuned for this upcoming notebook.
+
+https://sigopt.com/static/pdf/SigOpt_Bayesian_Optimization_Primer.pdf
+http://gpss.cc/gpmc17/slides/LancasterMasterclass_1.pdf
+ 
+
+
+
+-Yes, so far my strongest model is BERT Base Uncased model. In general I have noticed that hyper-parameter tuning has a large impact on local scores, and a few things come to mind:
+
+1) Batch size is very important. Authors suggest 16 is minimum before degradation of performance in general, but so far in this competition I have noticed better performance bringing the batch size to 64 or 128 (for which I have to use gradient accumulation). Small batch sizes seem to impair the pre-trained weights.
+
+2) After 1 epoch, performance tends to degrade, even for learning rates < 2e-05. It seems quite easy to overfit to this task, even when using 95% of the training data.
+
+3) I see worse performance so far for BERT Large, but this may be due to hyper-parameter influence. I need to continue to investigate.
+
+4) Mixed precision produces basically same performance as fp32 for me so far, making training much more effecient. Combined with gradient accumulation to batch size 128, BERT Base Uncased takes about 2hr for max-seq-len of 200 for a single epoch on RTX 2080ti.
+
+I will continue to add to the thread as I learn more. Take all with a pinch of salt since it's my first experience with BERT and I am learning like every one else :)
